@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="en"><!-- knows the language used in html document-->
+
+<head><!--linking stylesheet linking the js script is done inside it-->
+    <meta charset="UTF-8">
+	<!--machine learning code will be as utf-8 encoding-->
+	<!-- width is controlled and scaled accordingily of the viewport-->
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- <link rel="stylesheet " href="footer-port.css" /> -->
+    <link rel="stylesheet " href="style.css" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Oswald:wght@500&display=swap" rel="stylesheet">
+
+	<!-- very small script so written here-->
+    <script>
+        function navbarportqwerty() {
+            // upper lines defines the function and the name for this function si navbarport
+            var navbarportvar = document.getElementById("jstrigger-por");
+            // upper line define the variable named navbarportvar and it recieves the eleement by the id from this document
+            if (navbarportvar.className === "navbarportqwertyuiop-por") {
+                // here if the variable navbarportvar is equal to topnav-con then 
+                navbarportvar.className = "navbarportqwertyuiop-por smallscrn-por";
+                // it will added with smallscrn-port to make webpage respoinsive
+            } else {
+                navbarportvar.className = "navbarportqwertyuiop-por";
+                // remains same and script ended 
+            }
+        }
+    </script>
+
+</head>
+
+<body class="port_gradient-por">
+    <!-- puting the class name for the body so that allocate the gradient to id -->
+
+    <div class=" grid-container-por">
+        <!-- the new container is created where the elemeent is placed according to the grid address -->
+        <div class="navbarportqwertyuiop-por" id="jstrigger-por">
+            <!-- for the navigation bar the class is given tot the style sheet
+             -->
+            <!-- for the javascript the id is given so that script gets hte element and make the responsive view when screen is lessar than 600px -->
+            <a href="index.html">Home</a>
+            <!-- provideing access to index.html throught link-->
+            <a href="portfolio.html" class="active">Portfolio</a>
+            <!-- provideing access to portfolio.html throught link-->
+            <a href="contact.html">Contact</a>
+            <!-- provideing access to cntact.html throught link-->
+            <a href="cv.html">CV</a>
+            <!-- provideing access to cv.html throught link-->
+            <a href="sitereport.html">Sitereport</a>
+            <!-- provideing access to sitereport.html throught link-->
+            <a href="javascript:void(0);" class="threelineportqwerty-por" onclick="navbarportqwerty()">
+                <img src="Images/threeline.png" width="30" height="30" alt="here is the photo">
+            </a>
+        </div>
+        <div class="quote-por">
+            <!-- box class with different style -->
+            <h1>Comment can play with us but, Code never does.</h1>
+            <!-- this is something not my ownn i donot own the words this is said by the person ronjeffries and igive full honour to him -->
+            <!-- the code has the external styles using external stylesheet -->
+            <h3>RON JEFFRIES</h3>
+            <!-- the code has the external styles using external stylesheet -->
+
+        </div>
+        <div class="box-design1-por box-por">
+            <!-- multiple class one for grid location and another for the sizing and coloring of box -->
+            <h2 class="skills-por">HTML5
+                <!-- here the multi color text is used  -->
+                <span style="color: rgb(26, 174, 211)">and</span> CSS3 </h2>
+            <!-- the heading has the common class for all as to make the heading same  -->
+            <h4 class="portfolio-por">Portfolio</h4>
+            <!-- the fouth class has common heading so as make the common feature between the heading -->
+            <img src="Images/dummy.png" class="imgforPort" width="230" height="150" alt="here is the photo">
+            <!-- accesing the dummy image  -->
+
+            <h3 class="details-por">Details will be added soon....</h3>
+            <!-- last statement also use class its style present in external sheet -->
+
+        </div>
+        <div class="box-design2-por box-por">
+            <!-- multiple class one for grid location and another for the sizing and coloring of box -->
+            <h2 class="skills-por">JAVASCRIPT </h2>
+            <!-- the heading has the common class for all as to make the heading same  -->
+            <h4 class="portfolio-por">Portfolio</h4>
+            <!-- the fouth class has common heading so as make the common feature between the heading -->
+            <img src="Images/dummy.png" class="imgforPort" width="230" height="150" alt="here is the photo">
+            <!-- accesing the dummy image  -->
+            <h3 class="details-por">Details will be added soon....</h3>
+        </div>
+        <div class="box-design3-por box-por">
+            <!-- multiple class one for grid location and another for the sizing and coloring of box -->
+            <h2 class="skills-por">My SQL </h2>
+            <!-- the heading has the common class for all as to make the heading same  -->
+            <h4 class="portfolio-por">Portfolio</h4>
+            <!-- the fouth class has common heading so as make the common feature between the heading -->
+            <img src="Images/dummy.png" class="imgforPort" width="230" height="150" alt="here is the photo">
+            <!-- accesing the dummy image  -->
+            <h3 class="details-por">Details will be added soon....</h3>
+            <!-- last statement also use class its style present in external sheet -->
+        </div>
+        <div class="box-design4-por box-por">
+            <!-- multiple class one for grid location and another for the sizing and coloring of box -->
+            <h2 class="skills-por">PHP</h2>
+            <!-- the heading has the common class for all as to make the heading same  -->
+            <h4 class="portfolio-por">Portfolio</h4>
+            <!-- the fouth class has common heading so as make the common feature between the heading -->
+            <img src="Images/dummy.png" class="imgforPort" width="230" height="150" alt="here is the photo">
+            <!-- accesing the dummy image  -->
+            <h3 class="details-por">Details will be added soon....</h3>
+            <!-- last statement also use class its style present in external sheet -->
+        </div>
+        <div class="box-design5-por box-por">
+            <!-- multiple class one for grid location and another for the sizing and coloring of box -->
+            <h2 class="skills-por">C# </h2>
+            <!-- the heading has the common class for all as to make the heading same  -->
+            <h4 class="portfolio-por">Portfolio</h4>
+            <!-- the fouth class has common heading so as make the common feature between the heading -->
+            <img src="Images/dummy.png" class="imgforPort" width="230" height="150" alt="here is the photo">
+            <!-- accesing the dummy image  -->
+            <h3 class="details-por">Details will be added soon....</h3>
+            <!-- last statement also use class its style present in external sheet -->
+        </div>
+        <div class="box-design6-por box-por">
+            <!-- multiple class one for grid location and another for the sizing and coloring of box -->
+            <h2 class="skills-por">.NET </h2>
+            <!-- the heading has the common class for all as to make the heading same  -->
+            <h4 class="portfolio-por">Portfolio</h4>
+            <!-- the fouth class has common heading so as make the common feature between the heading -->
+            <img src="Images/dummy.png" class="imgforPort" width="230" height="150" alt="here is the photo">
+            <!-- accesing the dummy image  -->
+            <h3 class="details-por">Details will be added soon....</h3>
+            <!-- last statement also use class its style present in external sheet -->
+        </div>
+        <div class="portfolio-port footer-port">
+            <!-- here the div will access double class because portfolio contains different style -->
+            <!-- and footer-site contains the common style that i have kept it different -->
+            <h1 class="footertitle-port">Portfolio</h1>
+            <!-- the titile also uses different class to make it different -->
+            <a href="index.html">Me</a><br>
+            <!-- giving access the index html through link -->
+            <a href="index.html">Bio</a><br>
+            <!-- giving access the index html through link -->
+            <a href="cv.html">CV</a><br>
+            <!-- giving access the cv html through link -->
+            <a href="index.html">About me</a>
+            <!-- giving access the index html through link -->
+        </div>
+
+
+
+        <div class="sitereport-port footer-port">
+            <!-- here the div will access double class because portfolio contains different style -->
+            <!-- and footer-site contains the common style that i have kept it different -->
+            <h1 class="footertitle-port">Sitereport</h1>
+            <!-- the titile also uses different class to make it different -->
+
+
+            <a href="sitereport.html">Why this site</a><br>
+            <!-- giving access the sitereport html through link -->
+            <a href="sitereport.html">How this site</a><br>
+            <!-- giving access the sitereport html through link -->
+            <a href="sitereport.html">what is in this site?</a>
+            <!-- giving access the sitereport html through link -->
+
+        </div>
+
+
+
+        <div class="contact-port footer-port">
+            <!-- here the div will access double class because portfolio contains different style -->
+            <!-- and footer-site contains the common style that i have kept it different -->
+            <h1 class=" footertitle-port">Contact</h1>
+            <!-- the titile also uses different class to make it different -->
+
+            <a href="contact.html">Contact</a><br>
+            <!-- giving access the contact html through link -->
+            <a href="contact.html">Connect me on Social Media.</a>
+            <!-- giving access thecontact  html through link -->
+
+        </div>
+
+        <div class="footericoncontainer-port footer-port">
+            <!-- here the div will access double class because portfolio contains different style -->
+            <!-- and footer-site contains the common style that i have kept it different -->
+            <h2> You can find me at</h2>
+
+            <a href="https://www.facebook.com">
+                <!-- reaching to facebook.com through link -->
+                <img src="Images/fblogo.png" width="50" height="50" alt="here is the photo">
+                <!-- using image tag to access  facebook logo it has width height attribute and algn determines where to keep the image  -->
+
+
+            </a>
+            <a href="https://www.linkedin.com ">
+                <!-- reaching to linkedin.com through link -->
+                <img src="Images/inlogo.png " width="50" height="50" alt="here is the photo">
+                <!-- using image tag to access linkedin logo it has width height attribute and algn determines where to keep the image  -->
+
+
+            </a>
+            <a href="https://www.youtube.com">
+                <!-- reaching to youtube.com through link -->
+
+                <img src="Images/youlogo.jpg" width="50" height="50" alt="here is the photo">
+                <!-- using image tag to access   youtube logo it has width height attribute and algn determines where to keep the image  -->
+
+            </a>
+            <a href="https://www.instagram.com">
+                <!-- reaching to instagram.com through link -->
+
+                <!-- using image tag to access  instagram  logo it has width height attribute and algn determines where to keep the image  -->
+
+                <img src="Images/instalogo.png" width="50" height="50" alt="here is the photo">
+                <!-- using image tag to access  insta  logo it has width height attribute and algn determines where to keep the image  -->
+
+            </a>
+            <a href="https://www.twitter.com">
+                <!-- reaching to twitere.com through link -->
+
+                <img src="Images/twilogo.png" width="50" height="50" alt="here is the photo">
+                <!-- using image tag to access  twiter  logo it has width height attribute and algn determines where to keep the image  -->
+
+            </a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

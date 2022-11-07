@@ -1,0 +1,549 @@
+.hellolight1 {
+    animation: slowletterglow1 1.5s ease-in-out infinite;
+}
+
+@keyframes slowletterglow1 {
+    6.5% {
+        text-shadow: 15.01234px 16.01234px 7.01234px white;
+        color: white;
+    }
+    13% {}
+    19.5% {}
+    26.5% {}
+    32.5% {}
+    39% {}
+    45.5% {}
+    52% {}
+    58.5% {}
+    65% {}
+    72.5% {}
+    79% {}
+    85.5% {}
+    91% {}
+    100% {}
+}
+
+.hellolight2 {
+    animation: slowletterglow2 1.5s ease-in-out infinite;
+}
+
+@keyframes slowletterglow2 {
+    6.5% {}
+    13% {
+        text-shadow: 15.01234px 16.01234px 7.01234px white;
+        color: white;
+    }
+    19.5% {}
+    26.5% {}
+    32.5% {}
+    39% {}
+    45.5% {}
+    52% {}
+    58.5% {}
+    65% {}
+    72.5% {}
+    79% {}
+    85.5% {}
+    91% {}
+    100% {}
+}
+
+.hellolight3 {
+    animation: slowletterglow3 1.5s ease-in-out infinite;
+}
+
+@keyframes slowletterglow3 {
+    6.5% {}
+    13% {}
+    19.5% {
+        text-shadow: 15.01234px 16.01234px 7.01234px white;
+        color: white;
+    }
+    26.5% {}
+    32.5% {}
+    39% {}
+    45.5% {}
+    52% {}
+    58.5% {}
+    65% {}
+    72.5% {}
+    79% {}
+    85.5% {}
+    91% {}
+    100% {}
+}
+
+.hellolight4 {
+    animation: slowletterglow4 1.5s ease-in-out infinite;
+}
+
+@keyframes slowletterglow4 {
+    6.5% {}
+    13% {}
+    19.5% {}
+    26.5% {
+        text-shadow: 15.01234px 16.01234px 7.01234px white;
+        color: white;
+    }
+    32.5% {}
+    39% {}
+    45.5% {}
+    52% {}
+    58.5% {}
+    65% {}
+    72.5% {}
+    79% {}
+    85.5% {}
+    91% {}
+    100% {}
+}
+
+.hellolight5 {
+    animation: slowletterglow5 1.5s ease-in-out infinite;
+}
+
+@keyframes slowletterglow5 {
+    6.5% {}
+    13% {}
+    19.5% {}
+    26.5% {}
+    32.5% {
+        text-shadow: 15px 16px 7px white;
+        color: white;
+    }
+    39% {}
+    45.5% {}
+    52% {}
+    58.5% {}
+    65% {}
+    72.5% {}
+    79% {}
+    85.5% {}
+    91% {}
+    100% {}
+}
+
+.hellolight6 {
+    animation: slowletterglow6 1.5s ease-in-out infinite;
+}
+
+@keyframes slowletterglow6 {
+    6.5% {}
+    13% {}
+    19.5% {}
+    26.5% {}
+    32.5% {}
+    39% {
+        text-shadow: 15px 16px 7px white;
+        color: white;
+    }
+    45.5% {}
+    52% {}
+    58.5% {}
+    65% {}
+    72.5% {}
+    79% {}
+    85.5% {}
+    91% {}
+    100% {}
+}
+
+.hellolight7 {
+    animation: slowletterglow7 1.5s ease-in-out infinite;
+}
+
+@keyframes slowletterglow7 {
+    6.5% {}
+    13% {}
+    19.5% {}
+    26.5% {}
+    32.5% {}
+    39% {}
+    45.5% {
+        text-shadow: 15px 16px 7px white;
+        color: white;
+    }
+    52% {}
+    58.5% {}
+    65% {}
+    72.5% {}
+    79% {}
+    85.5% {}
+    91% {}
+    100% {}
+}
+
+.hellolight8 {
+    animation: slowletterglow8 1.5s ease-in-out infinite;
+}
+
+@keyframes slowletterglow8 {
+    6.5% {}
+    13% {}
+    19.5% {}
+    26.5% {}
+    32.5% {}
+    39% {}
+    45.5% {}
+    52% {
+        text-shadow: 15px 16px 7px white;
+        color: white;
+    }
+    58.5% {}
+    65% {}
+    72.5% {}
+    79% {}
+    85.5% {}
+    91% {}
+    100% {}
+}
+
+.hellolight9 {
+    animation: slowletterglow9 1.5s ease-in-out infinite;
+}
+
+@keyframes slowletterglow9 {
+    6.5% {}
+    13% {}
+    19.5% {}
+    26.5% {}
+    32.5% {}
+    39% {}
+    45.5% {}
+    52% {}
+    58.5% {
+        text-shadow: 15px 16px 7px white;
+        color: white;
+    }
+    65% {}
+    72.5% {}
+    79% {}
+    85.5% {}
+    91% {}
+    100% {}
+}
+
+.hellolight10 {
+    animation: slowletterglow10 1.5s ease-in-out infinite;
+}
+
+@keyframes slowletterglow10 {
+    6.5% {}
+    13% {}
+    19.5% {}
+    26.5% {}
+    32.5% {}
+    39% {}
+    45.5% {}
+    52% {}
+    58.5% {}
+    65% {
+        text-shadow: 15px 16px 7px white;
+        color: white;
+    }
+    72.5% {}
+    79% {}
+    85.5% {}
+    91% {}
+    100% {}
+}
+
+.hellolight11 {
+    animation: slowletterglow11 1.5s ease-in-out infinite;
+}
+
+@keyframes slowletterglow11 {
+    6.5% {}
+    13% {}
+    19.5% {}
+    26.5% {}
+    32.5% {}
+    39% {}
+    45.5% {}
+    52% {}
+    58.5% {}
+    65% {}
+    72.5% {
+        text-shadow: 15px 16px 7px white;
+        color: white;
+    }
+    79% {}
+    85.5% {}
+    91% {}
+    100% {}
+}
+
+.hellolight12 {
+    animation: slowletterglow12 1.5s ease-in-out infinite;
+}
+
+@keyframes slowletterglow12 {
+    6.5% {}
+    13% {}
+    19.5% {}
+    26.5% {}
+    32.5% {}
+    39% {}
+    45.5% {}
+    52% {}
+    58.5% {}
+    65% {}
+    72.5% {}
+    79% {
+        text-shadow: 15px 16px 7px white;
+        color: white;
+    }
+    85.5% {}
+    91% {}
+    100% {}
+}
+
+.hellolight13 {
+    animation: slowletterglow13 1.5s ease-in-out infinite;
+}
+
+@keyframes slowletterglow13 {
+    6.5% {}
+    13% {}
+    19.5% {}
+    26.5% {}
+    32.5% {}
+    39% {}
+    45.5% {}
+    52% {}
+    58.5% {}
+    65% {}
+    72.5% {}
+    79% {}
+    85.5% {
+        text-shadow: 15px 16px 7px white;
+        color: white;
+    }
+    91% {}
+    100% {}
+}
+
+.hellolight14 {
+    animation: slowletterglow14 1.5s ease-in-out infinite;
+}
+
+@keyframes slowletterglow14 {
+    6.5% {}
+    13% {}
+    19.5% {}
+    26.5% {}
+    32.5% {}
+    39% {}
+    45.5% {}
+    52% {}
+    58.5% {}
+    65% {}
+    72.5% {}
+    79% {}
+    85.5% {}
+    91% {
+        text-shadow: 15px 16px 7px white;
+        color: white;
+    }
+    100% {}
+}
+
+.hellolight15 {
+    animation: slowletterglow15 1.5s ease-in-out infinite;
+}
+
+@keyframes slowletterglow15 {
+    6.5% {}
+    13% {}
+    19.5% {}
+    26.5% {}
+    32.5% {}
+    39% {}
+    45.5% {}
+    52% {}
+    58.5% {}
+    65% {}
+    72.5% {}
+    79% {}
+    85.5% {}
+    91% {}
+    100% {
+        text-shadow: 15px 16px 7px white;
+        color: white;
+    }
+}
+
+.biolight1 {
+    animation: slowletterglowbio1 1.5s ease-in-out infinite;
+}
+
+@keyframes slowletterglowbio1 {
+    0% {
+        text-shadow: 1px 16px 7px white;
+        color: white;
+    }
+    30% {}
+    60% {}
+    100% {}
+}
+
+.biolight2 {
+    animation: slowletterglowbio2 1.5s ease-in-out infinite;
+}
+
+@keyframes slowletterglowbio2 {
+    0% {}
+    30% {
+        text-shadow: 15px 16px 7px white;
+        color: white;
+    }
+    60% {}
+    100% {}
+}
+
+.biolight3 {
+    animation: slowletterglowbio3 1.5s ease-in-out infinite;
+}
+
+@keyframes slowletterglowbio3 {
+    0% {}
+    30% {}
+    60% {
+        text-shadow: 15px 16px 7px white;
+        color: white;
+    }
+    100% {}
+}
+
+.biolight4 {
+    animation: slowletterglowbio4 1.5s ease-in-out infinite;
+}
+
+@keyframes slowletterglowbio4 {
+    0% {}
+    30% {}
+    60% {}
+    100% {
+        text-shadow: 15px 16px 7px white;
+        color: white;
+    }
+}
+
+.hobbylight1 {
+    animation: slowletterglowhobby1 1.5s ease-in-out infinite;
+}
+
+@keyframes slowletterglowhobby1 {
+    14% {
+        text-shadow: 15px 16px 7px white;
+        color: white;
+    }
+    28% {}
+    42% {}
+    56% {}
+    70% {}
+    84% {}
+    100% {}
+}
+
+.hobbylight2 {
+    animation: slowletterglowhobby2 1.5s ease-in-out infinite;
+}
+
+@keyframes slowletterglowhobby2 {
+    14% {}
+    28% {
+        text-shadow: 15px 16px 7px white;
+        color: white;
+    }
+    42% {}
+    56% {}
+    70% {}
+    84% {}
+    100% {}
+}
+
+.hobbylight3 {
+    animation: slowletterglowhobby3 1.5s ease-in-out infinite;
+}
+
+@keyframes slowletterglowhobby3 {
+    14% {}
+    28% {}
+    42% {
+        text-shadow: 15px 16px 7px white;
+        color: white;
+    }
+    56% {}
+    70% {}
+    84% {}
+    100% {}
+}
+
+.hobbylight4 {
+    animation: slowletterglowhobby4 1.5s ease-in-out infinite;
+}
+
+@keyframes slowletterglowhobby4 {
+    14% {}
+    28% {}
+    42% {}
+    56% {
+        text-shadow: 15px 16px 7px white;
+        color: white;
+    }
+    70% {}
+    84% {}
+    100% {}
+}
+
+.hobbylight5 {
+    animation: slowletterglowhobby5 1.5s ease-in-out infinite;
+}
+
+@keyframes slowletterglowhobby5 {
+    14% {}
+    28% {}
+    42% {}
+    56% {}
+    70% {
+        text-shadow: 15px 16px 7px white;
+        color: white;
+    }
+    84% {}
+    100% {}
+}
+
+.hobbylight6 {
+    animation: slowletterglowhobby6 1.5s ease-in-out infinite;
+}
+
+@keyframes slowletterglowhobby6 {
+    14% {}
+    28% {}
+    42% {}
+    56% {}
+    70% {}
+    84% {
+        text-shadow: 15px 16px 7px white;
+        color: white;
+    }
+    100% {}
+}
+
+.hobbylight7 {
+    animation: slowletterglowhobby7 1.5s ease-in-out infinite;
+}
+
+@keyframes slowletterglowhobby7 {
+    14% {}
+    28% {}
+    42% {}
+    56% {}
+    70% {}
+    84% {}
+    100% {
+        text-shadow: 15px 16px 7px white;
+        color: white;
+    }
+}

@@ -1,0 +1,814 @@
+    .grid-container-por {
+        display: grid;
+        /* it divides the screen into the desired shaped columned */
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+        /* here we have divided the screen int twelve columns */
+    }
+    
+    body {
+        margin: 0;
+        background-color: rgb(88, 18, 18);
+        /* margin is none */
+        font-family: Arial, Helvetica, sans-serif;
+        /* this is google font used here */
+    }
+    
+    .navbarportqwertyuiop-por {
+        overflow: hidden;
+        /* background-color : #333; */
+        grid-column: 4/13;
+        /* grid column start at 4 and end at 13 */
+    }
+    
+    .navbarportqwertyuiop-por a {
+        float: left;
+        /* the element is lfoating at left side */
+        display: block;
+        /* the element is treated as the block that means it have some white spaces around it */
+        color: #f2f2f2;
+        /* this sets the color for this */
+        text-align: center;
+        /* text is aligned at the center */
+        padding: 14px 16px;
+        /* vertical pading and horizontal padding is qritten here */
+        text-decoration: none;
+        /* underline is removed throgh this */
+        font-size: 17px;
+        /* the text size is setted */
+        background-color: rgb(15, 1, 44);
+        /* the bg color is as above */
+        font-weight: 700;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    @media only screen and (min-width:600px) {
+        .navbarportqwertyuiop-por a {
+            width: 125px;
+            height: 40px;
+            background-color: rgb(1, 27, 39);
+            padding: 20px;
+            font-size: 23px;
+        }
+    }
+    
+    @keyframes colorchangersite {
+        10% {
+            color: rgb(238, 255, 0);
+            /* this sets the color for this */
+            text-shadow: 0px 0px 1px rgb(255, 253, 253);
+            /* provides the desired shadow to the text */
+        }
+        20% {
+            color: rgb(166, 255, 0);
+            /* this sets the color for this */
+            text-shadow: 0px 0px 1px rgb(248, 193, 193);
+            /* provides the desired shadow to the text */
+        }
+        30% {
+            color: rgb(30, 255, 0);
+            /* this sets the color for this */
+            text-shadow: 0px 0px 1px rgb(252, 127, 127);
+            /* provides the desired shadow to the text */
+        }
+        40% {
+            color: rgb(0, 255, 149);
+            /* this sets the color for this */
+            /* provides the desired shadow to the text */
+        }
+        50% {
+            color: rgb(0, 174, 255);
+            /* this sets the color for this */
+            text-shadow: 0px 18px 18px rgb(115, 247, 103);
+            /* provides the desired shadow to the text */
+        }
+        60% {
+            color: rgb(0, 225, 255);
+            /* this sets the color for this */
+            /* provides the desired shadow to the text */
+        }
+        70% {
+            color: rgb(0, 47, 255);
+            /* this sets the color for this */
+            /* provides the desired shadow to the text */
+        }
+        80% {
+            color: rgb(38, 0, 255);
+            /* this sets the color for this */
+            text-shadow: 0px 16px 6px rgb(214, 243, 86);
+            /* provides the desired shadow to the text */
+        }
+        90% {
+            color: rgb(247, 0, 255);
+            /* this sets the color for this */
+            /* provides the desired shadow to the text */
+        }
+        100% {
+            color: rgb(255, 0, 43);
+            /* this sets the color for this */
+            text-shadow: 0px 20px 20px rgb(19, 111, 248);
+            /* provides the desired shadow to the text */
+        }
+    }
+    
+    .navbarportqwertyuiop-por a:hover {
+        background-color: rgb(54, 2, 2);
+        transition-duration: 1s;
+        /* the bg color is as above */
+        color: black;
+        /* this sets the color for this */
+        box-shadow: 0 4.12px 8.234px 0 rgba(0, 0, 0, 0.212), 0 6.1223px 20.12312px 0 rgba(0, 0, 0, 0.1922);
+        /* the above shadow will be the shadow for ht element */
+        /* the multiple merge into single one to provde eautiful one */
+        animation: colorchangersite 0.7s ease-out infinite;
+    }
+    
+    .navbarportqwertyuiop-por a.active {
+        background-color: rgb(33, 11, 75);
+        /* the bg color is as above */
+        color: rgb(78, 7, 7);
+        /* this sets the color for this */
+        box-shadow: 0 2.1223px 4.123123px 0 rgba(0, 0, 0, 0.212), 0 6.12312px 20.123123px 0 rgba(0, 0, 0, 0.1922);
+        /* the above shadow will be the shadow for ht element */
+        /* the multiple merge into single one to provde eautiful one */
+        animation: colorchangersite 0.7s ease-out infinite;
+    }
+    
+    .navbarportqwertyuiop-por .threelineportqwerty-por {
+        display: none;
+    }
+    /* the display of the icon will not be seen  */
+    /* because if it will be seen in the large screen then it will not meet the requirement */
+    
+    @media only screen and (max-width: 600px) {
+        .navbarportqwertyuiop-por a:not(:first-child) {
+            display: none;
+            /* only first element will be seen remainng will not be seeen */
+        }
+        .navbarportqwertyuiop-por a.threelineportqwerty-por {
+            float: right;
+            /* the icon will float right part fo the screen */
+            display: block;
+            /* the icon will be treated as the block */
+        }
+        .navbarportqwertyuiop-por {
+            width: 100%;
+            /* the navigation bar will allocate the full 100% width */
+            /* the widht is as above */
+            grid-column: 1/13;
+            /* as it is in small screen it will take all the column to be appropriate */
+        }
+        .navbarportqwertyuiop-por a:not(:last-child) {
+            grid-column: 1/12;
+            /* as it only for the achor name is will take approx 95% of space and that is here about 3 column */
+        }
+        .threelineportqwerty-por {
+            grid-column: 12/13;
+            /* for icon it will barely take about 5% space so it only takes one column */
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .navbarportqwertyuiop-por.smallscrn-por {
+            /* here media screen is the query which will be only valid if the device screen is maximum 599px if it is more than that  */
+            /* the default css will be applied */
+            position: relative;
+            /* this two class will have postion relative */
+            /* here this will be only applied if both topnav and responsive will be met and that will be done by js written in the script file */
+        }
+        .navbarportqwertyuiop-por.smallscrn-por a {
+            float: none;
+            /* the anchor tag will not float now */
+            display: block;
+            /* the anchor will be treated as the block */
+            text-align: left;
+            /* the letter will be left part of the screen */
+        }
+    }
+    
+    @keyframes shadowchangerport {
+        10% {
+            color: rgb(238, 255, 0);
+            /* this sets the color for this */
+            /* text-shadow: 0px 0px 1px rgb(255, 253, 253);provides the desired shadow to the text */
+            box-shadow: 0 8.43434px 12.43434px 0 rgba(0, 0, 0, 0.83232);
+        }
+        20% {
+            color: rgb(166, 255, 0);
+            /* this sets the color for this */
+            /* text-shadow: 0px 0px 1px rgb(248, 193, 193);provides the desired shadow to the text */
+            box-shadow: 0 8.43434px 12.43434px 0 rgba(0, 0, 0, 0.83232);
+        }
+        30% {
+            color: rgb(30, 255, 0);
+            /* this sets the color for this */
+            /* text-shadow: 0px 0px 1px rgb(252, 127, 127);provides the desired shadow to the text */
+            box-shadow: 0 8.43434px 12.43434px 0 rgba(0, 0, 0, 0.83232);
+        }
+        40% {
+            color: rgb(0, 255, 149);
+            /* this sets the color for this */
+            /* text-shadow: ;provides the desired shadow to the text */
+            box-shadow: 0 8.43434px 12.43434px 0 rgba(255, 0, 0, 0.832);
+        }
+        50% {
+            color: rgb(0, 174, 255);
+            /* this sets the color for this */
+            /* text-shadow: 0px 18px 18px rgb(115, 247, 103);provides the desired shadow to the text */
+            box-shadow: 0 8.43434px 12.43434px 0 rgba(255, 94, 0, 0.832);
+        }
+        60% {
+            color: rgb(0, 225, 255);
+            /* this sets the color for this */
+            /* text-shadow: ;provides the desired shadow to the text */
+            box-shadow: 0 8.43434px 12.43434px 0 rgba(255, 196, 2, 0.832);
+        }
+        70% {
+            color: rgb(0, 47, 255);
+            /* this sets the color for this */
+            /* text-shadow: ;provides the desired shadow to the text */
+            box-shadow: 0 8.43434px 12.43434px 0 rgba(60, 255, 1, 0.832);
+        }
+        80% {
+            color: rgb(38, 0, 255);
+            /* this sets the color for this */
+            /* text-shadow: 0px 16px 6px rgb(214, 243, 86);provides the desired shadow to the text */
+            box-shadow: 0 8.43434px 12.43434px 0 rgba(2, 255, 150, 0.832);
+        }
+        90% {
+            color: rgb(247, 0, 255);
+            /* this sets the color for this */
+            /* text-shadow: ;provides the desired shadow to the text */
+            box-shadow: 0 8.43434px 12.43434px 0 rgba(0, 47, 255, 0.832);
+        }
+        100% {
+            color: rgb(255, 0, 43);
+            /* this sets the color for this */
+            /* text-shadow: 0px 20px 20px rgb(19, 111, 248);provides the desired shadow to the text */
+            box-shadow: 0 4.4343px 5.3434px 0 rgba(255, 2, 141, 0.747);
+        }
+    }
+    
+    .port_gradient-por {
+        background-repeat: no-repeat;
+        /* no repeaition of the mage */
+        /* background-image: url("../Images/portfolio.jpg") stretch; */
+        /* the url of the background image is provided */
+    }
+    
+    @media only screen and (max-width:599px) {
+        .imgforPort {
+            width: 90%;
+        }
+    }
+    
+    .box-por {
+        margin-top: 75px;
+        /* top margin area is mentioned */
+        text-align: center;
+        /* text is aligned at the center */
+    }
+    
+    .skills-por {
+        font-family: 'Oswald', sans-serif;
+        /* this is google font used here */
+        font-size: 35px;
+        /* font size is mentioned */
+        margin-top: -0px;
+        /* top margin is 0px */
+        transition-duration: 1s;
+        /* time for transistion between the styles */
+        transition-timing-function: ease-in-out;
+        /* determines which types fo teh transition si it */
+        color: white;
+        /* this sets the color for this */
+    }
+    
+    .portfolio-por {
+        font-size: 25px;
+        /* this displays the text in the size mentioned above */
+        transition-duration: 1s;
+        /* time for transistion between the styles */
+        transition-timing-function: ease-in-out;
+        /* determines which type of the transition is it */
+        margin-top: -2px;
+        /* element is moved upward */
+        margin-bottom: -1px;
+        /* elemet is moved downward */
+        color: white;
+        /* this sets the color for this */
+        font-family: 'Pattaya', sans-serif;
+        /* this is google font used here */
+    }
+    
+    .details-por {
+        color: white;
+        /* this sets the color for this */
+        transition-duration: 1s;
+        /* time for transistion between the styles */
+        transition-timing-function: ease-in-out;
+        /* determines what type of te transition is it */
+        font-family: 'Reggae One', cursive;
+        /* this is google font used here */
+    }
+    
+    .skills-por:hover {
+        font-size: 37px;
+        /* the text size */
+        transition-duration: 2s;
+        /* timing of the changing of the slide */
+        transition-timing-function: ease-in-out;
+        /* determines how the transistion is performed */
+    }
+    
+    .portfolio-por:hover {
+        font-size: 28px;
+        /* determines the text size */
+        transition-duration: 2s;
+        /* timing of the changing fht slide  */
+        transition-timing-function: ease-in-out;
+        /* determines how the transisition is performed */
+    }
+    
+    .details-por:hover {
+        font-size: 20px;
+        /* text-xize */
+        transition-duration: 2s;
+        /* time of transition */
+        transition-timing-function: ease-in-out;
+        /* displays how the transition is preformed */
+    }
+    
+    .quote-por {
+        font-family: 'Noto Sans JP', sans-serif;
+        /* this is google font used here */
+        grid-column: 3/12;
+        /* the grid make the element ot start and end according to the above value (colummmmn) */
+        transition-duration: 1s;
+        /* time for transistion between the styles */
+        transition-timing-function: ease-in-out;
+        /* displays how the transition is preformed */
+    }
+    
+    @media only screen and (max-width: 599px) {
+        .quote-por {
+            font-family: 'Noto Sans JP', sans-serif;
+            /* this is google font used here */
+            grid-column: 1/13;
+            /* the grid make the element ot start and end according to the above value (colummmmn) */
+            grid-row: 2/3;
+            /* the grid make the element to start and end according to the above value */
+            transition-duration: 1s;
+            /* time for transistion between the styles */
+            transition-timing-function: ease-in-out;
+            /* displays how the transition is preformed */
+        }
+    }
+    
+    .quote-por h1 {
+        background-color: rgba(63, 28, 4, 0.548);
+        /* the bg color is as above */
+        color: white;
+        /* this sets the color for this */
+        width: fit-content;
+        /* the width is as above */
+        text-align: center;
+        /* align the text in desired way */
+        transition-duration: 1s;
+        /* time for transistion between the styles */
+        transition-timing-function: ease-in-out;
+        /* displays how the transition is preformed */
+    }
+    
+    .quote-por h3 {
+        background-color: rgba(63, 28, 4, 0.548);
+        /* the bg color is as above */
+        color: white;
+        /* this sets the color for this */
+        width: fit-content;
+        /* the widht is as above */
+        text-align: center;
+        /* align the text in desired way */
+        margin-left: 250px;
+        /* margin of the given element as above */
+        transition-duration: 1s;
+        /* time for transistion between the styles */
+        transition-timing-function: ease-in-out;
+        /* displays how the transition is preformed */
+    }
+    
+    .quote-por:hover {
+        font-family: 'Noto Sans JP', sans-serif;
+        /* this is google font used here */
+        grid-column: 3/12;
+        /* the grid make the element ot start and end according to the above value (colummmmn) */
+        transition-duration: 1s;
+        /* time for transistion between the styles */
+        transition-timing-function: ease-in-out;
+        /* displays how the transition is preformed */
+    }
+    
+    .quote-por h1:hover {
+        background-color: rgba(2, 8, 39, 0.548);
+        /* the bg color is as above */
+        color: white;
+        /* this sets the color for this */
+        width: fit-content;
+        /* the widht is as above */
+        text-align: center;
+        /* align the text in desired way */
+        transition-duration: 1s;
+        /* time for transistion between the styles */
+        transition-timing-function: ease-in-out;
+        /* displays how the transition is preformed */
+    }
+    
+    .quote-por h3:hover {
+        background-color: rgba(3, 37, 10, 0.548);
+        /* the bg color is as above */
+        color: white;
+        /* this sets the color for this */
+        transition-duration: 1s;
+        /* time for transistion between the styles */
+        /* time for transistion between the styles */
+        transition-timing-function: ease-in-out;
+        /* displays how the transition is preformed */
+    }
+    
+    .box-design1-por {
+        height: 350px;
+        animation: shadowchangerport 0.7s ease-out infinite;
+        /* the height of the element is as given */
+        transition-duration: 1s;
+        /* time for transistion between the styles */
+        /* time for transistion between the styles */
+        transition-timing-function: ease-in-out;
+        /* displays how the transition is preformed */
+        width: 250px;
+        /* the widht is as above */
+        background-color: rgb(97, 9, 24);
+        /* the bg color is as above */
+        grid-column: 2/5;
+        /* the grid make the element ot start and end according to the above value (colummmmn) */
+        grid-row: 3/4;
+        /* the grid make the element to start and end according to the above value */
+        box-shadow: rgba(0, 0, 0, 0.2125) 10.122px 54.2133123px 55.12312px, rgba(0, 0, 0, 0.1211) 0px -12.1312px 30.12112px, rgba(0, 0, 0, 0.121232) 0px 4.121231px 6.123123px, rgba(0, 0, 0, 0.17123) 0px 12.123123px 13.1232px, rgba(0, 0, 0, 0.09123) 0px -3.12312px 5.1223px;
+        /* the above shadow will be the shadow for ht element */
+    }
+    
+    .box-design1-por:hover {
+        padding: 12px 12px;
+        /* the padding of the top bottom is first one and right left is second one */
+        transition-duration: 1s;
+        /* time for transistion between the styles */
+        transition-timing-function: ease-in-out;
+        /* displays how the transition is preformed */
+        background-color: rgb(150, 99, 4);
+        /* the bg color is as above */
+    }
+    
+    @media only screen and (max-width: 599px) {
+        .box-design1-por {
+            height: 350px;
+            /* the height of the element is as given */
+            transition-duration: 1s;
+            /* time for transistion between the styles */
+            transition-timing-function: ease-in-out;
+            /* displays how the transition is preformed */
+            width: 87%;
+            /* the widht is as above */
+            margin-left: 10%;
+            /* the margin at the left side fo the element */
+            background-color: rgb(97, 9, 24);
+            /* the bg color is as above */
+            grid-column: 2/12;
+            /* the grid make the element ot start and end according to the above value (colummmmn) */
+            grid-row: 3/4;
+            /* the grid make the element to start and end according to the above value */
+            box-shadow: rgba(0, 0, 0, 0.25232) 10.12312px 54.12323px 55.12312px, rgba(0, 0, 0, 0.122132) 0px -12.123123px 30.1232px, rgba(0, 0, 0, 0.121) 0px 4.123123px 6.313px, rgba(0, 0, 0, 0.1711) 0px 12.123123px 13.12312px, rgba(0, 0, 0, 0.09123) 0px -3.1232px 5.123123px;
+            /* the above shadow will be the shadow for ht element */
+        }
+        .box-design1-por:hover {
+            padding: 12px 12px;
+            /* the padding of the top bottom is first one and right left is second one */
+            transition-duration: 1s;
+            /* time for transistion between the styles */
+            transition-timing-function: ease-in-out;
+            /* displays how the transition is preformed */
+            background-color: rgb(150, 99, 4);
+            /* the bg color is as above */
+        }
+    }
+    
+    .box-design2-por {
+        height: 350px;
+        animation: shadowchangerport 0.7s ease-out infinite;
+        /* the height of the element is as given */
+        width: 250px;
+        /* the widht is as above */
+        transition-duration: 1s;
+        /* time for transistion between the styles */
+        transition-timing-function: ease-in-out;
+        /* displays how the transition is preformed */
+        background-color: rgb(97, 95, 2);
+        /* the bg color is as above */
+        grid-column: 5/7;
+        /* the grid make the element ot start and end according to the above value (colummmmn) */
+        grid-row: 3/4;
+        /* the grid make the element to start and end according to the above value */
+        box-shadow: rgba(0, 0, 0, 0.25232) 10.12312px 54.12323px 55.12312px, rgba(0, 0, 0, 0.122132) 0px -12.123123px 30.1232px, rgba(0, 0, 0, 0.121) 0px 4.123123px 6.313px, rgba(0, 0, 0, 0.1711) 0px 12.123123px 13.12312px, rgba(0, 0, 0, 0.09123) 0px -3.1232px 5.123123px;
+        /* the above shadow will be the shadow for ht element */
+    }
+    
+    .box-design2-por:hover {
+        transition-duration: 2s;
+        /* timing for the transisiton */
+        transition-timing-function: ease-in-out;
+        /* displays how the transition is preformed */
+        background-color: rgb(98, 5, 126);
+        /* the bg color is as above */
+        padding: 12px 12px;
+    }
+    
+    @media only screen and (max-width: 599px) {
+        .box-design2-por {
+            height: 350px;
+            /* the height of the element is as given */
+            width: 80%;
+            /* the widht is as above */
+            margin-left: 10%;
+            /* the margin at the left side of the elment */
+            transition-duration: 1s;
+            /* time for transistion between the styles */
+            transition-timing-function: ease-in-out;
+            /* displays how the transition is preformed */
+            background-color: rgb(97, 95, 2);
+            /* the bg color is as above */
+            grid-column: 2/12;
+            /* the grid make the element ot start and end according to the above value (colummmmn) */
+            grid-row: 4/5;
+            /* the grid make the element to start and end according to the above value */
+            box-shadow: rgba(0, 0, 0, 0.25232) 10.12312px 54.12323px 55.12312px, rgba(0, 0, 0, 0.122132) 0px -12.123123px 30.1232px, rgba(0, 0, 0, 0.121) 0px 4.123123px 6.313px, rgba(0, 0, 0, 0.1711) 0px 12.123123px 13.12312px, rgba(0, 0, 0, 0.09123) 0px -3.1232px 5.123123px;
+            /* the above shadow will be the shadow for ht element */
+        }
+        .box-design2-por:hover {
+            transition-duration: 2s;
+            /* the time for the duration fo the transisiton */
+            transition-timing-function: ease-in-out;
+            /* displays how the transition is preformed */
+            background-color: rgb(98, 5, 126);
+            /* the bg color is as above */
+            padding: 12px 12px;
+        }
+    }
+    
+    .box-design3-por {
+        height: 350px;
+        animation: shadowchangerport 0.7s ease-out infinite;
+        /* the height of the element is as given */
+        transition-duration: 1s;
+        /* time for transistion between the styles */
+        transition-timing-function: ease-in-out;
+        /* displays how the transition is preformed */
+        width: 250px;
+        /* the widht is as above */
+        background-color: rgb(1, 78, 78);
+        /* the bg color is as above */
+        grid-column: 8/12;
+        /* the grid make the element ot start and end according to the above value (colummmmn) */
+        grid-row: 3/4;
+        /* the grid make the element to start and end according to the above value */
+        box-shadow: rgba(0, 0, 0, 0.25232) 10.12312px 54.12323px 55.12312px, rgba(0, 0, 0, 0.122132) 0px -12.123123px 30.1232px, rgba(0, 0, 0, 0.121) 0px 4.123123px 6.313px, rgba(0, 0, 0, 0.1711) 0px 12.123123px 13.12312px, rgba(0, 0, 0, 0.09123) 0px -3.1232px 5.123123px;
+        /* the above shadow will be the shadow for ht element */
+    }
+    
+    .box-design3-por:hover {
+        transition-duration: 2s;
+        /* the transitios time for the change ofthe style of the given element */
+        transition-timing-function: ease-in-out;
+        /* displays how the transition is preformed */
+        background-color: rgb(105, 17, 6);
+        /* the bg color is as above */
+        padding: 12px 12px;
+        /* the padding of the top bottom is first one and right left is second one */
+    }
+    
+    @media only screen and (max-width: 599px) {
+        .box-design3-por {
+            height: 350px;
+            /* the height of the element is as given */
+            transition-duration: 1s;
+            /* time for transistion between the styles */
+            transition-timing-function: ease-in-out;
+            /* displays how the transition is preformed */
+            width: 80%;
+            /* the widht is as above */
+            margin-left: 10%;
+            background-color: rgb(1, 78, 78);
+            /* the bg color is as above */
+            grid-column: 2/12;
+            /* the grid make the element ot start and end according to the above value (colummmmn) */
+            grid-row: 5/6;
+            /* the grid make the element to start and end according to the above value */
+            box-shadow: rgba(0, 0, 0, 0.25232) 10.12312px 54.12323px 55.12312px, rgba(0, 0, 0, 0.122132) 0px -12.123123px 30.1232px, rgba(0, 0, 0, 0.121) 0px 4.123123px 6.313px, rgba(0, 0, 0, 0.1711) 0px 12.123123px 13.12312px, rgba(0, 0, 0, 0.09123) 0px -3.1232px 5.123123px;
+            /* the above shadow will be the shadow for ht element */
+        }
+        .box-design3-por:hover {
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+            /* displays how the transition is preformed */
+            background-color: rgb(105, 17, 6);
+            /* the bg color is as above */
+            padding: 12px 12px;
+        }
+    }
+    
+    .box-design4-por {
+        height: 350px;
+        animation: shadowchangerport 0.7s ease-out infinite;
+        /* the height of the element is as given */
+        transition-duration: 1s;
+        /* time for transistion between the styles */
+        transition-timing-function: ease-in-out;
+        /* displays how the transition is preformed */
+        width: 250px;
+        /* the widht is as above */
+        background-color: rgb(79, 4, 94);
+        /* the bg color is as above */
+        grid-column: 2/5;
+        /* the grid make the element ot start and end according to the above value (colummmmn) */
+        grid-row: 4/5;
+        /* the grid make the element to start and end according to the above value */
+        box-shadow: rgba(0, 0, 0, 0.25232) 10.12312px 54.12323px 55.12312px, rgba(0, 0, 0, 0.122132) 0px -12.123123px 30.1232px, rgba(0, 0, 0, 0.121) 0px 4.123123px 6.313px, rgba(0, 0, 0, 0.1711) 0px 12.123123px 13.12312px, rgba(0, 0, 0, 0.09123) 0px -3.1232px 5.123123px;
+        /* the above shadow will be the shadow for ht element */
+    }
+    
+    .box-design4-por:hover {
+        transition-duration: 1s;
+        /* time for transistion between the styles */
+        transition-timing-function: ease-in-out;
+        /* displays how the transition is preformed */
+        background-color: rgb(17, 61, 4);
+        /* the bg color is as above */
+        padding: 12px 12px;
+        /* the padding of the top bottom is first one and right left is second one */
+    }
+    
+    @media only screen and (max-width:599px) {
+        .box-design4-por {
+            height: 350px;
+            /* the height of the element is as given */
+            transition-duration: 1s;
+            /* time for transistion between the styles */
+            transition-timing-function: ease-in-out;
+            /* displays how the transition is preformed */
+            width: 80%;
+            /* the widht is as above */
+            margin-left: 10%;
+            /* the margin at the left side of the element is as aove */
+            background-color: rgb(79, 4, 94);
+            /* the bg color is as above */
+            grid-column: 2/12;
+            /* the grid make the element ot start and end according to the above value (colummmmn) */
+            grid-row: 6/7;
+            /* the grid make the element to start and end according to the above value */
+            box-shadow: rgba(0, 0, 0, 0.25232) 10.12312px 54.12323px 55.12312px, rgba(0, 0, 0, 0.122132) 0px -12.123123px 30.1232px, rgba(0, 0, 0, 0.121) 0px 4.123123px 6.313px, rgba(0, 0, 0, 0.1711) 0px 12.123123px 13.12312px, rgba(0, 0, 0, 0.09123) 0px -3.1232px 5.123123px;
+            /* the above shadow will be the shadow for ht element */
+        }
+        .box-design4-por:hover {
+            transition-duration: 1s;
+            /* time for transistion between the styles */
+            transition-timing-function: ease-in-out;
+            /* displays how the transition is preformed */
+            background-color: rgb(17, 61, 4);
+            /* the bg color is as above */
+            padding: 12px 12px;
+            /* the padding of the top bottom is first one and right left is second one */
+        }
+    }
+    
+    .box-design5-por {
+        height: 350px;
+        animation: shadowchangerport 0.7s ease-out infinite;
+        /* the height of the element is as given */
+        transition-duration: 1s;
+        /* time for transistion between the styles */
+        transition-timing-function: ease-in-out;
+        /* displays how the transition is preformed */
+        width: 250px;
+        /* the widht is as above */
+        background-color: rgb(10, 4, 88);
+        /* the bg color is as above */
+        grid-column: 5/7;
+        /* the grid make the element ot start and end according to the above value (colummmmn) */
+        grid-row: 4/5;
+        /* the grid make the element to start and end according to the above value */
+        box-shadow: rgba(0, 0, 0, 0.25232) 10.12312px 54.12323px 55.12312px, rgba(0, 0, 0, 0.122132) 0px -12.123123px 30.1232px, rgba(0, 0, 0, 0.121) 0px 4.123123px 6.313px, rgba(0, 0, 0, 0.1711) 0px 12.123123px 13.12312px, rgba(0, 0, 0, 0.09123) 0px -3.1232px 5.123123px;
+        /* the above shadow will be the shadow for ht element */
+    }
+    
+    .box-design5-por:hover {
+        transition-duration: 1s;
+        /* time for transistion between the styles */
+        transition-timing-function: ease-in-out;
+        /* displays how the transition is preformed */
+        background-color: rgb(104, 32, 4);
+        /* the bg color is as above */
+        padding: 12px 12px;
+        /* the padding of the top bottom is first one and right left is second one */
+    }
+    
+    @media only screen and (max-width: 599px) {
+        .box-design5-por {
+            height: 350px;
+            /* the height of the element is as given */
+            transition-duration: 1s;
+            /* time for transistion between the styles */
+            transition-timing-function: ease-in-out;
+            /* displays how the transition is preformed */
+            width: 80%;
+            /* the widht is as above */
+            margin-left: 10%;
+            background-color: rgb(10, 4, 88);
+            /* the bg color is as above */
+            grid-column: 2/12;
+            /* the grid make the element ot start and end according to the above value (colummmmn) */
+            grid-row: 7/8;
+            /* the grid make the element to start and end according to the above value */
+            box-shadow: rgba(0, 0, 0, 0.25232) 10.12312px 54.12323px 55.12312px, rgba(0, 0, 0, 0.122132) 0px -12.123123px 30.1232px, rgba(0, 0, 0, 0.121) 0px 4.123123px 6.313px, rgba(0, 0, 0, 0.1711) 0px 12.123123px 13.12312px, rgba(0, 0, 0, 0.09123) 0px -3.1232px 5.123123px;
+            /* the above shadow will be the shadow for ht element */
+        }
+        .box-design5-por:hover {
+            transition-duration: 1s;
+            /* time for transistion between the styles */
+            transition-timing-function: ease-in-out;
+            /* displays how the transition is preformed */
+            background-color: rgb(104, 32, 4);
+            /* the bg color is as above */
+            padding: 12px 12px;
+            /* the padding of the top bottom is first one and right left is second one */
+        }
+    }
+    
+    .box-design6-por {
+        height: 350px;
+        animation: shadowchangerport 0.7s ease-out infinite;
+        /* the height of the element is as given */
+        transition-duration: 1s;
+        /* time for transistion between the styles */
+        transition-timing-function: ease-in-out;
+        /* displays how the transition is preformed */
+        width: 250px;
+        /* the widht is as above */
+        background-color: rgb(97, 2, 73);
+        /* the bg color is as above */
+        grid-column: 8/12;
+        /* the grid make the element ot start and end according to the above value (colummmmn) */
+        grid-row: 4/5;
+        /* the grid make the element to start and end according to the above value */
+        box-shadow: rgba(0, 0, 0, 0.25232) 10.12312px 54.12323px 55.12312px, rgba(0, 0, 0, 0.122132) 0px -12.123123px 30.1232px, rgba(0, 0, 0, 0.121) 0px 4.123123px 6.313px, rgba(0, 0, 0, 0.1711) 0px 12.123123px 13.12312px, rgba(0, 0, 0, 0.09123) 0px -3.1232px 5.123123px;
+        /* the above shadow will be the shadow for ht element */
+    }
+    
+    .box-design6-por:hover {
+        transition-duration: 1s;
+        /* time for transistion between the styles */
+        transition-timing-function: ease-in-out;
+        /* displays how the transition is preformed */
+        background-color: rgb(3, 43, 104);
+        /* the bg color is as above */
+        padding: 12px 12px;
+        /* this sets the top bottom padding t 12px and right left padding to 12px */
+    }
+    
+    @media only screen and (max-width: 599px) {
+        .box-design6-por {
+            height: 350px;
+            /* the height of the element is as given */
+            transition-duration: 1s;
+            /* time for transistion between the styles */
+            transition-timing-function: ease-in-out;
+            /* displays how the transition is preformed */
+            width: 80%;
+            /* the widht is as above */
+            margin-left: 10%;
+            background-color: rgb(97, 2, 73);
+            /* the bg color is as above */
+            grid-column: 2/12;
+            /* the grid make the element ot start and end according to the above value (colummmmn) */
+            grid-row: 8/9;
+            /* the grid make the element to start and end according to the above value */
+            box-shadow: rgba(0, 0, 0, 0.25232) 10.12312px 54.12323px 55.12312px, rgba(0, 0, 0, 0.122132) 0px -12.123123px 30.1232px, rgba(0, 0, 0, 0.121) 0px 4.123123px 6.313px, rgba(0, 0, 0, 0.1711) 0px 12.123123px 13.12312px, rgba(0, 0, 0, 0.09123) 0px -3.1232px 5.123123px;
+            /* the above shadow will be the shadow for ht element */
+        }
+        .box-design6-por:hover {
+            transition-duration: 1s;
+            /* time for transistion between the styles */
+            transition-timing-function: ease-in-out;
+            /* displays how the transition is preformed */
+            /* it determines the typqe of the transition  */
+            background-color: rgb(3, 43, 104);
+            /* the bg color is as above */
+            padding: 12px 12px;
+            /* the padding of the top bottom is first one and right left is second one */
+        }
+    }

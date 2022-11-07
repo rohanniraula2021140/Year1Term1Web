@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html lang="en"><!-- knows the language used in html document-->
+
+<head><!--linking stylesheet linking the js script is done inside it-->
+    <meta charset="UTF-8">
+	<!--machine learning code will be as utf-8 encoding-->
+	<!-- width is controlled and scaled accordingily of the viewport-->
+	<meta name="viewport" content="width=device-width , initial-scale=1.0 ">
+    <title>Rohan Niraula</title>
+    <link rel="stylesheet " href="style.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap" rel="stylesheet">
+
+
+
+	<!-- very small script so written here-->
+    <script>
+        function navbarinqwerty() {
+            // upper lines defines the function and the name for this function si navbarin
+            var navbarinvar = document.getElementById("jstrigger-in");
+            // upper line define the variable navbarinvar and it recieves the eleement by the id from this document
+            if (navbarinvar.className === "navbarinqwertyuiop-in") {
+                // here if the variable navbarinvar is equal to topnav-con then 
+                navbarinvar.className = "navbarinqwertyuiop-in smallscrn-in";
+                // it will add with smallscrn-in so that responsive change in the style is obtained otherwise
+            } else {
+                navbarinvar.className = "navbarinqwertyuiop-in";
+                // remains same 
+            }
+        }
+    </script>
+</head>
+
+<body class="bgcolor-in">
+    <!-- puting the class name for the body so that allocate the gradient to id -->
+
+    <div class="grid-container-in">
+        <!-- the new container is created where the elemeent is placed according to the grid address -->
+
+        <div class="navbarinqwertyuiop-in" id="jstrigger-in">
+            <!-- for the navigation bar the class is given tot the style sheet
+             -->
+            <!-- for the javascript the id is given so that script gets hte element and make the responsive view when screen is lessar than 600px -->
+            <a href="index.html" class="active">Home</a>
+            <!-- provideing access to index.html throught link-->
+            <a href="portfolio.html">Portfolio</a>
+            <!-- provideing access to portfolio.html throught link-->
+            <a href="contact.html">Contact</a>
+            <!-- provideing access to cntact.html throught link-->
+            <a href="cv.html">CV</a>
+            <!-- provideing access to cv.html throught link-->
+            <a href="sitereport.html">Sitereport</a>
+            <!-- provideing access to sitereport.html throught link-->
+            <a href="javascript:void(0);" class="threelineinqwerty-in" onclick="navbarinqwerty()">
+                <img src="Images/threeline.png" width="30" height="30" alt="this is the photo">
+            </a>
+        </div>
+
+
+        <div class="grid-item-in index_hello ">
+            <!-- one allocates the grid area another is for first para style -->
+
+            <h3> Hello</h3>
+            <!-- title also has style in style.css -->
+            <h2 class="index_imrohan"><span class="hellolight1">I</span><span class="hellolight2">'</span><span class="hellolight3">m</span><span class="hellolight4"> R</span><span class="hellolight5">o</span><span class="hellolight6">h</span><span class="hellolight7">a</span><span class="hellolight8">n</span><span class="hellolight9"> N</span><span class="hellolight10">i</span><span class="hellolight11">r</span><span class="hellolight12">a</span><span class="hellolight13">u</span><span class="hellolight14">l</span><span class="hellolight15">a</span>
+            </h2>
+            <!-- 2nd heading has class name -->
+
+            <p class="index_hello_para">Newbie in the Web Development and<br> has a interest in the field of Artificial<br> Intellegence and Machine Learning.</p>
+            <!-- paragraph has class fromwhich it takes the style -->
+            <form action="sitereport.html" method="get">
+                <button class="index_button">Learn more
+                </button>
+            </form>
+            <!-- the button has style fromtheindex-btton  -->
+
+
+        </div>
+        <div class="firstimage">
+            <img src="Images/five.jpg" width="400" height="400" alt="here is the photo">
+        </div>
+        <div class="secondimage">
+            <img src="Images/four.jpg" width="400" height="400" alt="here is the photo" class="imagechangeone">
+            <img src="Images/two.jpg" width="400" height="400" alt="here is the photo" class="imagechangetwo">
+
+        </div>
+        <!-- first para div ends here -->
+        <!-- second para div start from here -->
+        <div class="grid-item-in index_bio" id="bio">
+            <!-- multiple class provide the multiple styles and id is to naviage to the certain paragraph -->
+            <h2 style="font-family: ubuntu;"><span class="biolight1">I</span><span class="biolight2">N</span><span class="biolight3">F</span><span class="biolight4">O</span></h2>
+            <!-- 2nd heading has class in sheets without class name -->
+
+            <p class="index_aboutme_para">Only Believe's the Unexpectional Truth Called Death. <br> Not Fear of death <br> No Addiction, No love and No any Things to lose.<br> Want to Achieve the ultimate goal. <br> Has Decent knowledge about it.
+            </p>
+            <!-- para class gives the styles to the paragrah -->
+            <form action="sitereport.html" method="get">
+
+                <button class="index_button">
+                
+                    Learn more
+                
+                </button>
+            </form>
+            <!-- the button has style fromtheindex-btton -->
+
+        </div>
+        <div class="grid-item-in index_aboutme">
+            <!-- multiple class provide the multiple styles and id is to naviage to the certain paragraph -->
+
+            <h2><span class="hobbylight1">H</span><span class="hobbylight2">o</span><span class="hobbylight3">b</span><span class="hobbylight4">b</span><span class="hobbylight5">i</span><span class="hobbylight6">e</span><span class="hobbylight7">s</span></h2>
+            <!-- the heading has the styles in the external lheading  -->
+
+
+            <p class="index_aboutme_para">Newbie in the Web Development and has a <br>interest in the field of Artificial <br>Intellegence and Machine Learning. Want to be Certified<br>from Google, Facebook, Amazon and various<br> institution like havard, MIT, Cambridge,<br> Oxford
+                and manymore.
+            </p>
+            <!-- the paragrpah has the styles in the external stylesheet -->
+            <form action="sitereport.html" method="get">
+                <button class="index_button">
+                
+                    Learn more
+                
+                </button>
+            </form>
+            <!-- the button has style fromtheindex-btton  -->
+
+        </div>
+        <div class="thirdimage">
+            <img src="Images/one.jpg" width="400" height="400" alt="here is the photo" class="imagechangethree">
+            <img src="Images/three.jpg" width="400" height="400" alt="here is the photo" class="imagechangefour">
+
+        </div>
+
+
+
+        <br>
+
+        <div class="portfolio-in footer-in">
+            <!-- here the div will access double class because portfolio contains different style -->
+            <!-- and footer-site contains the common style that i have kept it different -->
+            <h1 class="footertitle-in">Portfolio</h1>
+            <!-- the titile also uses different class to make it different -->
+            <a href="index.html">Me</a><br>
+            <!-- giving access the index html through link -->
+            <a href="index.html">Bio</a><br>
+            <!-- giving access the index html through link -->
+            <a href="cv.html">CV</a><br>
+            <!-- giving access the cv html through link -->
+            <a href="index.html">About me</a>
+            <!-- giving access the index html through link -->
+        </div>
+
+
+
+        <div class="sitereport-in footer-in">
+            <!-- here the div will access double class because portfolio contains different style -->
+            <!-- and footer-site contains the common style that i have kept it different -->
+            <h1 class="footertitle-in">Sitereport</h1>
+            <!-- the titile also uses different class to make it different -->
+
+
+            <a href="sitereport.html">Why this site</a><br>
+            <!-- giving access the sitereport html through link -->
+            <a href="sitereport.html">How this site</a><br>
+            <!-- giving access the sitereport html through link -->
+            <a href="sitereport.html">what is in this site?</a>
+            <!-- giving access the sitereport html through link -->
+
+        </div>
+
+
+
+        <div class="contact-in footer-in">
+            <!-- here the div will access double class because portfolio contains different style -->
+            <!-- and footer-site contains the common style that i have kept it different -->
+            <h1 class="footertitle-in">Contact</h1>
+            <!-- the titile also uses different class to make it different -->
+
+            <a href="contact.html">Contact</a><br>
+            <!-- giving access the contact html through link -->
+            <a href="contact.html">Connect me on Social Media.</a>
+            <!-- giving access the contact html through link -->
+
+        </div>
+
+        <div class="footericoncontainer-in footer-in ">
+            <!-- here the div will access double class because portfolio contains different style -->
+            <!-- and footer-site contains the common style that i have kept it different -->
+            <h2> You can find me at</h2>
+
+            <a href="https://www.facebook.com">
+                <!-- reaching to facebook.com through link -->
+                <img src="Images/fblogo.png" width="50" height="50" alt="here is the photo">
+                <!-- using image tag to access   facebook logo it has width height attribute and algn determines where to keep the image  -->
+
+            </a>
+            <a href="https://www.linkedin.com">
+                <!-- reaching to linkedin.com through link -->
+                <img src="Images/inlogo.png " width="50" height="50" alt="here is the photo">
+                <!-- using image tag to access  linkedin  logo it has width height attribute and algn determines where to keep the image  -->
+
+            </a>
+            <a href="https://www.youtube.com">
+                <!-- reaching to youtube.com through link -->
+
+                <img src="Images/youlogo.jpg" width="50" height="50" alt="here is the photo">
+                <!-- using image tag to access youtube   logo it has width height attribute and algn determines where to keep the image  -->
+            </a>
+            <a href="https://www.instagram.com">
+                <!-- reaching to instagram .com through link -->
+
+                <img src="Images/instalogo.png" width="50" height="50" alt="here is the photo">
+                <!-- using image tag to access   instagram  logo it has width height attribute and algn determines where to keep the image  -->
+            </a>
+            <a href="https://www.twitter.com">
+                <!-- reaching to twitter.com through link -->
+
+                <img src="Images/twilogo.png" width="50" height="50" alt="here is the photo">
+                <!-- using image tag to access  twitter  logo it has width height attribute and algn determines where to keep the image  -->
+            </a>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+
+
+</html>

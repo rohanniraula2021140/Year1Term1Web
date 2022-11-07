@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en"><!-- knows the language used in html document-->
+
+<head><!--linking stylesheet linking the js script is done inside it-->
+    <meta charset="UTF-8">
+	<!--machine learning code will be as utf-8 encoding-->
+	<!-- width is controlled and scaled accordingily of the viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- <link rel="stylesheet" href="footer-con.css"> -->
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Padauk:wght@700&family=Prompt:wght@500&family=Roboto+Mono:wght@500&family=Source+Code+Pro:wght@700&display=swap" rel="stylesheet">
+    <!-- very small script so written here-->
+	<script>
+        function navbarconqwerty() {
+            // upper lines defines the function and the name for this function si navbarcon
+            var navbarconvar = document.getElementById("jstrigger-con");
+            // upper line define the variable and it recieves the eleement by the id from this document 
+
+            if (navbarconvar.className === "navbarconqwertyuiop-con") {
+                // here if the variable navbarconvar is equal to topnav-con then 
+                navbarconvar.className = "navbarconqwertyuiop-con smallscrn-con";
+                // it will added with smallscrn-con otherwise
+            } else {
+                navbarconvar.className = "navbarconqwertyuiop-con";
+                // remains same 
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="grid-container-con">
+        <!-- the new container is created where the elemeent is placed according to the grid address -->
+
+        <div class="getintouch-con">
+            <!-- this is new container for the get in touch box / -->
+            <h2>Be Near With Me</h2>
+            <!-- the heading for the box first ans style presen in the ext sheet using class selector -->
+
+            <h3 class="feelfree-con">Have any query?</h3>
+            <!-- it is the class for the text  -->
+            <div class="rohan-con">
+                <!-- new div with style for the form
+                it is done so as to make the upper using z index
+            for detail look at webpage -->
+                <form action="mailto:rohanniroula456@gmail.com" method="POST">
+                    <!-- post uses the encryption mehtod while sending the data to the databaxa -->
+                    <input type="text" name="FirstName" placeholder="First Name">
+                    <!-- it is input for the text -->
+                    <!-- the syles is written in external stylesheet in the form of input[type ] -->
+                    <input type="text" name="LastName" placeholder="Last Name">
+                    <!-- it is input for the text nam e/ -->
+                    <!-- the syles is written in external stylesheet in the form of input[type -->
+                    <input type="email" name="FirstName" placeholder="Email">
+                    <!-- it is input for the email -->
+                    <!-- the syles is written in external stylesheet in the form of input[type -->
+                    <input type="text" name="Phoneno" placeholder="Phone NO">
+                    <!-- it is input for the email -->
+                    <!-- the syles is written in external stylesheet in the form of input[type -->
+                    <br>
+
+
+                    <textarea>Any query or suggestion write here.....</textarea><br>
+                    <!-- it is inupt for the text area  -->
+                    <input class="submitbtn-con" type="submit" value="Submit">
+                    <!-- anchor tag opens the mailin option to rohanniroula 456@gmailc.om  -->
+                    <!-- and input type submit creates the button tosubmit  -->
+                </form>
+            </div>
+        </div>
+        <div class="contactbox-con">
+            <!-- this is new container for the contact box / -->
+            <h2>Contact Me</h2>
+            <!-- the heading for the box first ans style presen in the ext sheet using class selector -->
+            <ul>
+
+                <li><img src="Images/location.png" width="25" height="25" alt="this is the photo">
+                    <!-- accessing the  image -->
+                    <a href="https://www.google.com/maps/@27.7211288,85.3322699,19.75z ">
+                        <!-- going to google map for the loction view -->
+                        Bhatbhateni, Kathmandu</a>
+                </li>
+                <li><img src="Images/message.png" width="25" height="25" alt="this is the photo">
+                    <!-- accessing the  image -->
+                    <a href="mailto:rohanniroula456@gmail.com ">
+                        <!-- going to email -->
+                        rohanniraula@gmail.com</a>
+                </li>
+                <li><img src="Images/skype.png" width="25" height="25" alt="this is the photo">
+                    <!-- accessing the  image -->
+                    <a href="http://www.skype.com ">rohanniraula</a></li>
+                <li><img src="Images/smartphone.png" width="25" height="25" alt="this is the photo">
+                    <!-- accessing the  image -->
+                    +977-9874563210</li>
+
+            </ul>
+
+
+        </div>
+        <div class="navbarconqwertyuiop-con ">
+            <!-- this is new container for nav bar / -->
+
+            <div class="navbarconqwertyuiop-con" id="jstrigger-con">
+                <!-- for the navigation bar the class is given tot the style sheet
+             -->
+                <!-- for the javascript the id is given so that script gets hte element and make the responsive view when screen is lessar than 600px -->
+                <a href="index.html">Home</a>
+                <!-- provideing access to index.html throught link-->
+                <a href="portfolio.html">Portfolio</a>
+                <!-- provideing access to portfolio.html throught link-->
+                <a href="contact.html" class="active">Contact</a>
+                <!-- provideing access to cntact.html throught link-->
+                <a href="cv.html">CV</a>
+                <!-- provideing access to cv.html throught link-->
+                <a href="sitereport.html">Sitereport</a>
+                <!-- provideing access to sitereport.html throught link-->
+                <a href="javascript:void(0); " class="threelineconqwerty-con" onclick="navbarconqwerty() ">
+                    <img src="Images/threeline.png" width="30" height="30" alt="this is the photo">
+                </a>
+            </div>
+
+        </div>
+        <div class="portfolio-con footer-con">
+            <!-- here the div will access double class because portfolio contains different style -->
+            <!-- and footer-site contains the common style that i have kept it different -->
+            <h1 class="footertitle-con">Portfolio</h1>
+            <!-- the titile also uses different class to make it different -->
+            <a href="index.html">Me</a><br>
+            <!-- giving access the index html through link -->
+            <a href="index">Bio</a><br>
+            <!-- giving access the index html through link -->
+            <a href="cv.html">CV</a><br>
+            <!-- giving access the cv html through link -->
+            <a href="index.html">About me</a>
+            <!-- giving access the index html through link -->
+        </div>
+
+
+
+        <div class="sitereport-con footer-con">
+            <!-- here the div will access double class because portfolio contains different style -->
+            <!-- and footer-site contains the common style that i have kept it different -->
+            <h1 class="footertitle-con">Siterepot</h1>
+            <!-- the titile also uses different class to make it different -->
+
+
+            <a href="sitereport.html">Why this site</a><br>
+            <!-- giving access the sitererport html through link -->
+            <a href="sitereport.html">How this site</a><br>
+            <!-- giving access the sitererport html through link -->
+            <a href="sitereport.html">what is in this site?</a>
+            <!-- giving access the sitererport html through link -->
+
+        </div>
+
+
+
+        <div class="contactfooter-con footer-con">
+            <!-- here the div will access double class because portfolio contains different style -->
+            <!-- and footer-site contains the common style that i have kept it different -->
+            <h1 class="footertitle-con">Contact</h1>
+            <!-- the titile also uses different class to make it different -->
+
+            <a href="contact.html">Contact</a><br>
+            <!-- giving access the contacthtml through link -->
+            <a href="contact.html">Connect me on Social Media.</a>
+            <!-- giving access the contact html through link -->
+
+        </div>
+
+        <div class="footericoncontainer-con footer-con ">
+            <!-- here the div will access double class because portfolio contains different style -->
+            <!-- and footer-site contains the common style that i have kept it different -->
+            <h2> You can find me at</h2>
+            <!-- the titile also uses different class to make it different -->
+
+            <a href="https://www.facebook.com ">
+                <!-- reaching to facebook.com through link -->
+                <img src="Images/fblogo.png" width="50" height="50" alt="this is the photo">
+                <!-- using image tag to access facebook   logo it has width height attribute and algn determines where to keep the image  -->
+
+            </a>
+            <a href="https://www.linkedin.com ">
+                <!-- reaching to linked in .com through link -->
+                <img src="Images/inlogo.png" width="50" height="50" alt="this is the photo">
+                <!-- using image tag to access    linked in logo it has width height attribute and algn determines where to keep the image  -->
+
+            </a>
+            <a href="https://www.youtube.com ">
+                <!-- reaching to youtubeinstargram.com through link -->
+
+                <img src="Images/youlogo.jpg" width="50" height="50" alt="this is the photo">
+                <!-- using image tag to access  youtubeinstargram  logo it has width height attribute and algn determines where to keep the image  -->
+            </a>
+            <a href="https://www.instagram.com ">
+                <!-- reaching to instargram.com through link -->
+
+                <img src="Images/instalogo.png" width="50" height="50" alt="this is the photo">
+                <!-- using image tag to access instargram   logo it has width height attribute and algn determines where to keep the image  -->
+            </a>
+            <a href="https://www.twitter.com ">
+                <!-- reaching to twiter.com through link -->
+
+                <img src="Images/twilogo.png" width="50" height="50" alt="this is the photo">
+                <!-- using image tag to access  twiter  logo it has width height attribute and algn determines where to keep the image  -->
+            </a>
+        </div>
+
+    </div>
+</body>
+
+</html>

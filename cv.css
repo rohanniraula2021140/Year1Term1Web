@@ -1,0 +1,1255 @@
+.grid-container-cv {
+    display: grid;
+    /* it divides the page into the number of the region specified according to down  */
+    grid-template-columns: auto auto auto auto;
+    /* it divides the whole page into the four parts and the each parts width is not defined that means  */
+    /* the width will be automatically be sized */
+}
+
+body {
+    background-color: rgb(88, 18, 18);
+}
+
+.side-bar-cv {
+    grid-column: 3/ span2;
+    /* the grid will make the element to start from the 3th column and the to take the 2 column */
+    background-color: rgb(126, 209, 235);
+    /* it will make bg color to specied rgb  */
+    color: white;
+    /* the text will appear  in white color */
+    text-align: center;
+    /* the text will be aligned in the center */
+    width: 95%;
+    /* the width of the sidebar is set to 95% */
+    grid-row: 2;
+    /* the grid will make the element to start from the 2nd row */
+    float: left;
+    /* the element will be floated to the left */
+    margin-top: 30px;
+    /* the element has 30px margin top area */
+    transition-duration: 1s;
+    /* the element transition time is 1s */
+    font-size: 22px;
+    /* the letter will be sized is 22px */
+}
+
+.side-bar-cv:hover {
+    box-shadow: 0 7.01234px 15.01234px 0 rgba(0, 0, 0, 0.9111);
+    /* on hover the box shadow will be changed will be black */
+    color: rgb(255, 255, 255);
+    /* the color will be changed to white on hover */
+    text-shadow: 0 0 5.01234px white;
+    /* the text shadow will appear as above on hover */
+    font-size: 23px;
+    /* the letter will be seen in 23px */
+}
+
+.profile_img-cv {
+    box-shadow: 0 2.01234px 9.01234px 0 rgba(19.01234, 12.01234, 12.01234, 0.0751), 0 5.01234px 23.01234px 0 rgba(14.01234, 13, 13, 0.356);
+    /* the multiple shadows are mixed into one through the aboe three shadows */
+    height: 200px;
+    /* the height of the image will be above */
+    width: 50%;
+    /* the width is half as total  */
+}
+
+@keyframes shadowchangercv {
+    10% {
+        /* text-shadow: 0px 0px 1px rgb(255, 253, 253);provides the desired shadow to the text */
+        box-shadow: 0 8.43434px 12.43434px 0 rgba(0, 0, 0, 0.83232);
+    }
+    20% {
+        /* text-shadow: 0px 0px 1px rgb(248, 193, 193);provides the desired shadow to the text */
+        box-shadow: 0 8.43434px 12.43434px 0 rgba(0, 0, 0, 0.83232);
+    }
+    30% {
+        /* text-shadow: 0px 0px 1px rgb(252, 127, 127);provides the desired shadow to the text */
+        box-shadow: 0 8.43434px 12.43434px 0 rgba(0, 0, 0, 0.83232);
+    }
+    40% {
+        /* text-shadow: ;provides the desired shadow to the text */
+        box-shadow: 0 8.43434px 12.43434px 0 rgba(255, 0, 0, 0.832);
+    }
+    50% {
+        /* text-shadow: 0px 18px 18px rgb(115, 247, 103);provides the desired shadow to the text */
+        box-shadow: 0 8.43434px 12.43434px 0 rgba(255, 94, 0, 0.832);
+    }
+    60% {
+        /* text-shadow: ;provides the desired shadow to the text */
+        box-shadow: 0 8.43434px 12.43434px 0 rgba(255, 196, 2, 0.832);
+    }
+    70% {
+        /* text-shadow: ;provides the desired shadow to the text */
+        box-shadow: 0 8.43434px 12.43434px 0 rgba(60, 255, 1, 0.832);
+    }
+    80% {
+        /* text-shadow: 0px 16px 6px rgb(214, 243, 86);provides the desired shadow to the text */
+        box-shadow: 0 8.43434px 12.43434px 0 rgba(2, 255, 150, 0.832);
+    }
+    90% {
+        /* text-shadow: ;provides the desired shadow to the text */
+        box-shadow: 0 8.43434px 12.43434px 0 rgba(0, 47, 255, 0.832);
+    }
+    100% {
+        /* text-shadow: 0px 20px 20px rgb(19, 111, 248);provides the desired shadow to the text */
+        box-shadow: 0 4.4343px 5.3434px 0 rgba(255, 2, 141, 0.747);
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    /* when the screen is up to 599px the down query will be used */
+    .side-bar-cv {
+        grid-column: 1/ span 4;
+        /* the grid make the element to display throught the 1st column and take 4 column */
+        background-color: rgb(126, 209, 235);
+        /* the bg color will be blue on small screen         */
+        color: white;
+        /* the color of the letter is white */
+        grid-row: 7;
+        /* the element will start from row 7  */
+        text-align: center;
+        /* the text is aligned to the center */
+        width: 97%;
+        /* the width is full as much it can take  */
+        transition-duration: 1s;
+        /* the time transiton for the changes is 1s */
+        font-size: 22px;
+        /* the letter is sized as abover */
+    }
+    .side-bar-cv:hover {
+        box-shadow: 0 5.55669px 15.99996765px 0 rgba(0, 0, 0, 0.9);
+        /* the box shadow is used to provided to make the element to make as if it is uplifted from the screen */
+        color: rgb(255, 255, 255);
+        /* the color of the letter is white in color */
+        text-shadow: 0 0 5px white;
+        /* the letter has white shadow */
+        font-size: 23px;
+        /* the text are sized to  */
+    }
+    .profile_img-cv {
+        box-shadow: 0 3.999456px 7.8743643px 0 rgba(19, 17, 17, 0.219), 0 5.2323px 19.23px 0 rgba(12, 4, 4, 0.24);
+        /* the image contais the multiple shadows mixed into one which make the shadows special one */
+        height: 200px;
+        /* the height is  fixed in 200px */
+        width: 50%;
+        /* the width is half as the total  */
+    }
+}
+
+.navbarcvqwertyuiop-cv {
+    overflow: hidden;
+    /* when the content gets toomuch then it will have scroll but the overflow hidden will hide the extra content
+    and the scrollbar will not appear */
+    grid-column: 2/4;
+    /* element willl start from 2th column and end in 4th column */
+    grid-row: 1/2;
+    /* the grid will make the element to start from the 1st row to 2nd row */
+}
+
+.navbarcvqwertyuiop-cv a {
+    float: left;
+    /* the content will attached to the left side of the element border */
+    display: block;
+    /* it will treat as block means it donont has content or element near to it  */
+    color: #f2f2f2;
+    /* the letter will have white color */
+    text-align: center;
+    /* text is aligned in centered */
+    padding: 13.5px 17.5px;
+    /* the top and bottom padding 13.5px and right and left bottom padding 17.5 */
+    text-decoration: none;
+    /* the underline of the anchor tag is removed */
+    font-size: 17px;
+    /* the letter has fixed sized */
+    background-color: rgb(59, 15, 1);
+    /* the bg color is as above */
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@media only screen and (min-width:600px) {
+    .navbarcvqwertyuiop-cv a {
+        /* width: 75px; */
+        height: 40px;
+        background-color: rgb(1, 27, 39);
+        padding: 20px;
+        font-size: 23px;
+    }
+}
+
+.navbarcvqwertyuiop-cv a:hover {
+    background-color: rgb(53, 2, 2);
+    /* the bg coloris changed into above on hover */
+    color: black;
+    /* letter color is as abover */
+    transition-duration: 1s;
+    /* the changes on hover will take 1s */
+    box-shadow: 0 2.44px 6.4545px 0 rgba(36, 15, 15, 0.938), 0 6px 20px 0 rgb(78, 26, 26);
+    /* the multiple shadows present are mixed into one  */
+    animation: colorchangersite 0.7s ease-out infinite;
+}
+
+@keyframes colorchangersite {
+    10% {
+        color: rgb(238, 255, 0);
+        /* this sets the color for this */
+        text-shadow: 0px 0px 1.01234px rgb(255, 253, 253);
+        /* provides the desired shadow to the text */
+    }
+    20% {
+        color: rgb(166, 255, 0);
+        /* this sets the color for this */
+        text-shadow: 0px 0px 1.01234px rgb(248, 193, 193);
+        /* provides the desired shadow to the text */
+    }
+    30% {
+        color: rgb(30, 255, 0);
+        /* this sets the color for this */
+        text-shadow: 0px 0px 1.01234px rgb(252, 127, 127);
+        /* provides the desired shadow to the text */
+    }
+    40% {
+        color: rgb(0, 255, 149);
+        /* this sets the color for this */
+        /* provides the desired shadow to the text */
+    }
+    50% {
+        color: rgb(0, 174, 255);
+        /* this sets the color for this */
+        text-shadow: 0px 18.01234px 18.01234px rgb(115, 247, 103);
+        /* provides the desired shadow to the text */
+    }
+    60% {
+        color: rgb(0, 225, 255);
+        /* this sets the color for this */
+        /* provides the desired shadow to the text */
+    }
+    70% {
+        color: rgb(0, 47, 255);
+        /* this sets the color for this */
+        /* provides the desired shadow to the text */
+    }
+    80% {
+        color: rgb(38, 0, 255);
+        /* this sets the color for this */
+        text-shadow: 0px 16.01234px 6.01234px rgb(214, 243, 86);
+        /* provides the desired shadow to the text */
+    }
+    90% {
+        color: rgb(247, 0, 255);
+        /* this sets the color for this */
+        /* provides the desired shadow to the text */
+    }
+    100% {
+        color: rgb(255, 0, 43);
+        /* this sets the color for this */
+        text-shadow: 0px 20.01234px 20.01234px rgb(19, 111, 248);
+        /* provides the desired shadow to the text */
+    }
+}
+
+.navbarcvqwertyuiop-cv a.active {
+    background-color: rgb(64, 53, 85);
+    /* the bg color is as abover */
+    color: white;
+    /* letter colr is white */
+    box-shadow: 0 2.2434px 4.2342px 0 rgba(32, 30, 30, 0.274), 0 6.234px 20.2343234234px 0 rgba(26, 6, 6, 0.281);
+    /* it provde the shadows which are mixed into one */
+    animation: colorchangersite 0.7s ease-out infinite;
+}
+
+.navbarcvqwertyuiop-cv .threelinecvqwerty-cv {
+    display: none;
+    /* the display of the icon will not be seen  */
+    /* because if it will be seen in the large screen then it will not meet the requirement */
+}
+
+@media only screen and (max-width: 600px) {
+    .navbarcvqwertyuiop-cv a:not(:first-child) {
+        display: none;
+        /* only first element will be seen remainng will not be seeen */
+    }
+    .navbarcvqwertyuiop-cv a.threelinecvqwerty-cv {
+        float: right;
+        /* the icon will float right part fo the screen */
+        display: block;
+        /* the icon will be treated as the block */
+    }
+    .navbarcvqwertyuiop-cv {
+        width: 100%;
+        /* the navigation bar will allocate the full 100% width */
+        grid-column: 1/5;
+        /* as it is in small screen it will take all the column to be appropriate */
+    }
+    .navbarcvqwertyuiop-cv a:not(:last-child) {
+        grid-column: 1/4;
+        /* as it only for the achor name is will take approx 95% of space and that is here about 3 column */
+    }
+    .threelinecvqwerty-cv {
+        grid-column: 4/5;
+        /* for icon it will barely take about 5% space so it only takes one column */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navbarcvqwertyuiop-cv.smallscrn-cv {
+        /* here media screen is the query which will be only valid if the device screen is maximum 599px if it is more than that  */
+        /* the default css will be applied */
+        position: relative;
+        /* this two class will have postion relative */
+        /* here this will be only applied if both topnav and responsive will be met and that will be done by js written in the script file */
+    }
+    .navbarcvqwertyuiop-cv.smallscrn-cv a {
+        float: none;
+        /* the anchor tag will not float now */
+        display: block;
+        /* the anchor will be treated as the block */
+        text-align: left;
+        /* the letter will be left part of the screen */
+    }
+}
+
+
+/* .transparentbox {
+    grid-column: 3/ span1;
+} */
+
+.cvgrad-cv {
+    background-image: linear-gradient(rgb(255.01234, 255.01234, 255.01234), rgb(136.01234, 134.01234, 134.01234), rgb(133.01234, 132.01234, 132.01234));
+    /* from here i have desinged the linear gradient */
+}
+
+.card1-cv {
+    width: 375px;
+    animation: shadowchangercv 1s ease-out infinite;
+    /* the width is as above */
+    grid-column: 1/ 2;
+    /* the grid makes it as to start from the 1st column to 2nd column   */
+    grid-row: 2;
+    /* the grid makes it to start form the 2nd row */
+    height: fit-content;
+    /* the element will take the height as much as the content */
+    background-color: rgb(62, 38, 92);
+    /* the bg color will be according to the above rgb */
+    box-shadow: 0 12.334px 17.34px 0 rgba(15, 11, 11, 0.247);
+    /* element is shadowed with above value  */
+    margin: 30px 12px 520px 22px;
+    /* margin top margin right marginn bottom and margin left  */
+    transition-duration: 0.1s;
+    /* transition time is as above  */
+    color: white;
+    /* the letter is colored as white */
+    padding-bottom: 50px;
+    /* the element is bottom padde dwith 50px */
+    text-align: left;
+    /* the leter are alligned left */
+    font-size: 15px;
+    /* the letter are sized as above */
+}
+
+.card1-cv:hover {
+    box-shadow: 0 7.4242px 16.234234px 0 rgba(68, 39, 39, 0.808);
+    /* the shcdow of the element is presented as the box  */
+    color: rgb(255, 255, 255);
+    /* the letter is colored as the white */
+    text-shadow: 0 0 6.01234px whitesmoke;
+    /* the text are shadod with upper value */
+    font-size: 16px;
+    /* the text are displayed as its size */
+}
+
+.cardhead1-cv {
+    color: white;
+    /* the color is white */
+    margin-top: -22px;
+    /* the above margin is in negative means it is shifted upward */
+    background-color: rgb(72, 185, 185);
+    /* the bg color is as above */
+    text-align: center;
+    /* the letter are cenered aligned */
+    cursor: pointer;
+    /* when hover ccursor is pointer */
+    transition-duration: 1s;
+    /* the transition time is 1s */
+    width: 100%;
+    /* the width is 100% */
+    font-size: 18px;
+    /* the text sizes as above */
+}
+
+.carddown1-cv {
+    padding-left: 25px;
+    /* the padding at left is 25px */
+    font-family: 'Inconsolata', monospace;
+    /* the font-family is from google and tis is inconslata */
+}
+
+@media only screen and (max-width: 599px) {
+    /* the query will only rn when the screen is maximum 599px */
+    .card1-cv {
+        width: 90%;
+        /* the width is as above */
+        grid-column: 1/span4;
+        /* the grid makes the element to start from the 1st columna and it will take th 4 column */
+        grid-row: 2/ span1;
+        /* the grid make s the element to strt from the 2th row and it will take only one row */
+        height: fit-content;
+        /* the height is will auto adjust according to content  */
+        background-color: rgb(62, 38, 92);
+        /* the bg color is as above */
+        box-shadow: 0 14.3434px 18.34343px 0 rgba(19, 17, 17, 0.2);
+        /* the above shadow will be the shadwo for the elemetn */
+        color: white;
+        /* the letter is white */
+        text-align: left;
+        /* the text is aligned in left */
+        transition-duration: 1s;
+        /* the time for change or transititon is 1s */
+        font-size: 14px;
+        /* the font size is 14px */
+    }
+    .card1-cv:hover {
+        box-shadow: 0 8.949247px 16.23423497px 0 rgba(0, 0, 0, 0.9);
+        /* the above shadow will be the shadow for ht element */
+        color: rgb(255, 255, 255);
+        /* the text the color is white */
+        text-shadow: 0 0 5.322px white;
+        /* the shadow is seen in the text */
+        font-size: 15px;
+        /* the letter will be sized according to the upper value */
+    }
+    .cardhead1-cv {
+        color: white;
+        /* the color of letter will be text */
+        margin-top: -22px;
+        /* the margin in top is as above */
+        background-color: rgb(72, 185, 185);
+        /* the bg color is as above */
+        text-align: center;
+        /* the text is center aligned */
+        cursor: pointer;
+        /* the cursor is pointer when hover */
+        transition-duration: 1s;
+        /* the transition take 1s to happen */
+        width: 100%;
+        /* the width is full as much as it takes  */
+        font-size: 18px;
+        /* the font size is as above */
+    }
+    .carddown1-cv {
+        padding-left: 25px;
+        /* the element will have padding of 25px */
+        font-family: 'Inconsolata', monospace;
+        /* this is google font and it is inconsolate */
+    }
+}
+
+.card2-cv {
+    width: 375px;
+    animation: shadowchangercv 1s ease-out infinite;
+    /* the widht is as above */
+    grid-column: 2/3;
+    /* it will start and 2th to 3th column  */
+    grid-row: 2;
+    /* it will take from the 2th row */
+    transition-duration: 1s;
+    /* the time for transsition is as above */
+    height: fit-content;
+    /* the height will be auto adjust as the content */
+    background-color: rgb(92, 38, 43);
+    /* the bg color is as above */
+    box-shadow: 0 14.4545px 18.454px 0 rgba(32, 2, 2, 0.2);
+    /* the box shadow is for card 2 */
+    color: white;
+    /* the color is white */
+    margin: 30px 12px 12px 22px;
+    /* margin top right bottom left is as above */
+    text-align: left;
+    /* text is left aligned */
+    font-size: 14px;
+    /* text is sizes as abve */
+}
+
+.card2-cv:hover {
+    box-shadow: 0 8.2323px 16.34343px 0 rgba(10, 5, 5, 0.781);
+    /* the shadows appear on hover */
+    color: rgb(255, 255, 255);
+    /* on hoover white color is seen */
+    text-shadow: 0 0 5.54px #f8f7f7;
+    /* on hover text shadow is apperared */
+    font-size: 15px;
+    /* on hover font size is changed */
+    transition-duration: 1s;
+    /* the transition duration si as abover */
+}
+
+.cardhead2-cv {
+    color: white;
+    /* text color i white */
+    transition-duration: 1s;
+    /* time for transtion iis 1s */
+    margin-top: -22px;
+    /* element is lifted upper */
+    background-color: rgb(72, 185, 185);
+    /* the background color is above */
+    text-align: center;
+    /* the letter is aligned center */
+    cursor: pointer;
+    /* on hover the cursor is pointer  */
+    width: 100%;
+    /* it takes as much widht it can take */
+    font-size: 18px;
+    /* the text size is as above */
+}
+
+.carddown2-cv {
+    padding-left: 25px;
+    /* the padding left is as above */
+    font-family: 'Inconsolata', monospace;
+    /* the google font is incoonsolata */
+}
+
+.card2-cv h2 {
+    font-size: 27px;
+    /* the font size is ass above */
+    transition-duration: 1s;
+    /* teh transtion duraton is as above */
+}
+
+.card2-cv p {
+    font-size: 20px;
+    /* the text size is as above */
+    transition-duration: 1s;
+    /* teh transtion duraton is as above */
+}
+
+.card2-cv h3 {
+    transition-duration: 1s;
+    /* teh transtion duraton is as above */
+    font-size: 24px;
+    /* the text size is as above */
+}
+
+.card2-cv h2:hover {
+    font-size: 27.5px;
+    /* the text size is as above */
+    transition-duration: 1s;
+    /* teh transtion duraton is as above */
+}
+
+.card2-cv p:hover {
+    font-size: 20.5px;
+    /* the text size is as above */
+    transition-duration: 1s;
+    /* teh transtion duraton is as above */
+}
+
+.card2-cv h3:hover {
+    transition-duration: 0.1s;
+    /* teh transtion duraton is as above */
+    font-size: 24.5px;
+    /* the text size is as above */
+}
+
+@media only screen and (max-width:599px) {
+    .card2-cv {
+        width: 90%;
+        /* the widht is as above */
+        grid-column: 1/span4;
+        /* grid-row: 3/span1; */
+        transition-duration: 1s;
+        /* height: 250px; */
+        height: fit-content;
+        /* the height will be auto adjust as the content */
+        background-color: rgb(92, 38, 43);
+        box-shadow: 0 14.01234px 18.01234px 0 rgba(0, 0, 0, 0.211);
+        /* the above shadow will be the shadow for ht element */
+        transition: 0.1s;
+        /* teh transtion duraton is as above */
+        color: white;
+        margin-top: 425px;
+        text-align: left;
+        /* text is displayed in style assabove mentioned */
+        font-size: 14px;
+        /* the text size is as above */
+    }
+    .card2-cv:hover {
+        box-shadow: 0 8.01234px 16.01234px 0 rgba(0, 0, 0, 0.911);
+        /* the above shadow will be the shadow for ht element */
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 5px white;
+        /* on hover text shadow is apperared */
+        font-size: 15px;
+        /* the text size is as above */
+        transition-duration: 1s;
+        /* teh transtion duraton is as above */
+    }
+    .cardhead2-cv {
+        color: white;
+        transition-duration: 1s;
+        /* teh transtion duraton is as above */
+        margin-top: -22px;
+        background-color: rgb(72, 185, 185);
+        text-align: center;
+        /* text is displayed in style assabove mentioned */
+        cursor: pointer;
+        width: 100%;
+        /* the widht is as above */
+        font-size: 18px;
+        /* the text size is as above */
+    }
+    .carddown2-cv {
+        padding-left: 25px;
+        /* it provides the padding to the left sides accroding to the above mangnitude */
+        font-family: 'Inconsolata', monospace;
+        /* the google font is incoonsolata */
+    }
+    .card2-cv h2:hover {
+        font-size: 27px;
+        /* the text size is as above */
+        transition-duration: 1s;
+        /* teh transtion duraton is as above */
+    }
+    .card2-cv p:hover {
+        font-size: 20px;
+        /* the text size is as above */
+        transition-duration: 1s;
+        /* teh transtion duraton is as above */
+    }
+    .card2-cv h3:hover {
+        transition-duration: 1s;
+        /* teh transtion duraton is as above */
+    }
+}
+
+.card3-cv {
+    animation: shadowchangercv 1s ease-out infinite;
+    width: 375px;
+    /* the widht is as above */
+    height: fit-content;
+    /* the height will be auto adjust as the content */
+    grid-column: 1/span1;
+    grid-row: 3;
+    background-color: rgb(92, 38, 70);
+    margin: -970px 12px 12px 22px;
+    box-shadow: 0 14.01234px 18.01234px 0 rgba(0, 0, 0, 0.211);
+    /* the above shadow will be the shadow for ht element */
+    transition: 0.1s;
+    /* teh transtion duraton is as above */
+    text-align: left;
+    /* text is displayed in style assabove mentioned */
+    color: white;
+    /* text is displayed in white color */
+    font-size: 14px;
+    /* the text size is as above */
+}
+
+.card3-cv:hover {
+    box-shadow: 0 8.01234px 16.01234px 0 rgba(0, 0, 0, 0.911);
+    /* the above shadow will be the shadow for ht element */
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5.01234px white;
+    /* on hover text shadow is apperared */
+    font-size: 15px;
+    /* the text size is as above */
+    transition-duration: 1s;
+    /* teh transtion duraton is as above */
+}
+
+.cardhead3-cv {
+    color: white;
+    margin-top: -22px;
+    background-color: rgb(72, 185, 185);
+    text-align: center;
+    /* text is displayed in style assabove mentioned */
+    cursor: pointer;
+    width: 100%;
+    /* the widht is as above */
+    font-size: 18px;
+    /* the text size is as above */
+}
+
+.carddown3-cv {
+    padding-left: 25px;
+    /* it provides the padding to the left sides accroding to the above mangnitude */
+    font-family: 'Inconsolata', monospace;
+    /* the google font is incoonsolata */
+}
+
+.card3-cv h2 {
+    text-shadow: 0 0 5.01234px white;
+    /* on hover text shadow is apperared */
+    font-size: 25px;
+    /* the text size is as above */
+    transition-duration: 1s;
+    /* teh transtion duraton is as above */
+}
+
+.card3-cv h3 {
+    text-shadow: 0 0 5.01234px white;
+    /* on hover text shadow is apperared */
+    font-size: 25px;
+    /* the text size is as above */
+    transition-duration: 1s;
+    /* teh transtion duraton is as above */
+}
+
+.card3-cv h5 {
+    font-size: 20px;
+    /* the text size is as above */
+}
+
+.card3-cv p {
+    text-shadow: 0 0 5.01234px white;
+    /* on hover text shadow is apperared */
+    font-size: 16px;
+    /* the text size is as above */
+    transition-duration: 1s;
+    /* teh transtion duraton is as above */
+}
+
+.card3-cv h2:hover {
+    text-shadow: 0 0 5.01234px white;
+    /* on hover text shadow is apperared */
+    font-size: 25.5px;
+    /* the text size is as above */
+    transition-duration: 1s;
+    /* teh transtion duraton is as above */
+}
+
+.card3-cv h3:hover {
+    text-shadow: 0 0 5.01234px white;
+    /* on hover text shadow is apperared */
+    font-size: 26px;
+    /* the text size is as above */
+    transition-duration: 1s;
+    /* teh transtion duraton is as above */
+}
+
+.card3-cv p:hover {
+    text-shadow: 0 0 5.01234px white;
+    /* on hover text shadow is apperared */
+    font-size: 20px;
+    /* the text size is as above */
+    transition-duration: 1s;
+    /* teh transtion duraton is as above */
+}
+
+@media only screen and (max-width: 599px) {
+    .card3-cv {
+        width: 90%;
+        /* the widht is as above */
+        height: fit-content;
+        /* the height will be auto adjust as the content */
+        grid-column: 1/ span 4;
+        /* grid-row: 4 / span1; */
+        background-color: rgb(92, 38, 70);
+        /* margin: -1412px 12px 12px 22px; */
+        box-shadow: 0 14.01234px 18.01234px 0 rgba(0, 0, 0, 0.211);
+        /* the above shadow will be the shadow for ht element */
+        transition: 0.1s;
+        /* teh transtion duraton is as above */
+        margin-top: 40px;
+        text-align: left;
+        /* text is displayed in style assabove mentioned */
+        color: white;
+        /* the color of the letter is white in color */
+        font-size: 14px;
+        /* the text size is as above */
+    }
+    .card3-cv:hover {
+        box-shadow: 0 8.01234px 16.01234px 0 rgba(0, 0, 0, 0.9123);
+        /* the above shadow will be the shadow for ht element */
+        color: rgb(255, 255, 255);
+        /* the color of the letter is white in color */
+        text-shadow: 0 0 5px white;
+        /* on hover text shadow is apperared */
+        font-size: 15px;
+        /* the text size is as above */
+        transition-duration: 1s;
+        /* teh transtion duraton is as above */
+    }
+    .cardhead3-cv {
+        color: white;
+        /* the color of the letter is white in color */
+        margin-top: -22px;
+        background-color: rgb(72, 185, 185);
+        text-align: center;
+        /* text is displayed in style assabove mentioned */
+        cursor: pointer;
+        width: 100%;
+        /* the widht is as above */
+        font-size: 18px;
+        /* the text size is as above */
+    }
+    .carddown3-cv {
+        padding-left: 25px;
+        /* it provides the padding to the left sides accroding to the above mangnitude */
+        font-family: 'Inconsolata', monospace;
+        /* the google font is incoonsolata */
+    }
+    .card3-cv h2:hover {
+        text-shadow: 0 0 5.01234px white;
+        /* on hover text shadow is apperared */
+        font-size: 25px;
+        /* the text size is as above */
+        transition-duration: 1s;
+        /* teh transtion duraton is as above */
+    }
+    .card3-cv h3:hover {
+        text-shadow: 0 0 5.01234px white;
+        /* on hover text shadow is apperared */
+        font-size: larger;
+        /* the text size is as above */
+        transition-duration: 1s;
+        /* teh transtion duraton is as above */
+    }
+    .card3-cv p:hover {
+        text-shadow: 0 0 5.01234px white;
+        /* on hover text shadow is apperared */
+        font-size: larger;
+        /* the text size is as above */
+        transition-duration: .1s;
+        /* teh transtion duraton is as above */
+    }
+}
+
+.card4-cv {
+    animation: shadowchangercv 1s ease-out infinite;
+    width: 375px;
+    /* the widht is as above */
+    grid-row: 3;
+    /* height: 250px; */
+    grid-column: 2/span1;
+    height: fit-content;
+    /* the height will be auto adjust as the content */
+    background-color: rgb(42, 38, 92);
+    box-shadow: 0 14.01234px 18.01234px 0 rgba(0, 0, 0, 0.211);
+    /* the above shadow will be the shadow for ht element */
+    transition: 0.1s;
+    /* teh transtion duraton is as above */
+    margin: -740px 12px 12px 22px;
+    text-align: left;
+    /* text is displayed in style assabove mentioned */
+    color: white;
+    /* the color of the letter is white in color */
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+.card4-cv:hover {
+    box-shadow: 0 8.01234px 16.01234px 0 rgba(0, 0, 0, 0.911);
+    /* the above shadow will be the shadow for ht element */
+    color: rgb(255, 255, 255);
+    /* the color of the letter is white in color */
+    text-shadow: 0 0 5px white;
+    /* on hover text shadow is apperared */
+    font-size: 15px;
+    /* the text size is as above */
+    transition-duration: 1s;
+    /* teh transtion duraton is as above */
+}
+
+.cardhead4-cv {
+    color: white;
+    /* the color of the letter is white in color */
+    margin-top: -22px;
+    background-color: rgb(72, 185, 185);
+    text-align: center;
+    /* text is displayed in style assabove mentioned */
+    cursor: pointer;
+    width: 100%;
+    /* the widht is as above */
+    font-size: 18px;
+    /* the text size is as above */
+}
+
+
+/* teh transtion duraton is as above */
+
+.carddown4-cv {
+    padding-left: 25px;
+    /* it provides the padding to the left sides accroding to the above mangnitude */
+    font-family: 'Inconsolata', monospace;
+    /* the google font is incoonsolata */
+}
+
+@media only screen and (max-width: 599px) {
+    .card4-cv {
+        width: 90%;
+        /* the widht is as above */
+        grid-column: 1/ span 4;
+        margin-top: 1425px;
+        height: fit-content;
+        /* the height will be auto adjust as the content */
+        background-color: rgb(42, 38, 92);
+        box-shadow: 0 14.01234px 18.01234px 0 rgba(0, 0, 0, 0.211);
+        /* the above shadow will be the shadow for ht element */
+        transition: 0.1s;
+        /* teh transtion duraton is as above */
+        text-align: left;
+        /* text is displayed in style assabove mentioned */
+        color: white;
+        /* the color of the letter is white in color */
+        font-size: 14px;
+        /* the text size is as above */
+    }
+    .card4-cv:hover {
+        box-shadow: 0 8.01234px 16.01234px 0 rgba(0, 0, 0, 0.911);
+        /* the above shadow will be the shadow for ht element */
+        color: rgb(255, 255, 255);
+        /* the color of the letter is white in color */
+        text-shadow: 0 0 5px white;
+        /* on hover text shadow is apperared */
+        font-size: 15px;
+        /* the text size is as above */
+        transition-duration: 1s;
+        /* teh transtion duraton is as above */
+    }
+    .cardhead4-cv {
+        /* display: inline-block;
+    padding: 8px; */
+        color: white;
+        /* the color of the letter is white in color */
+        margin-top: -22px;
+        background-color: rgb(72, 185, 185);
+        text-align: center;
+        /* text is displayed in style assabove mentioned */
+        cursor: pointer;
+        width: 100%;
+        /* the widht is as above */
+        font-size: 18px;
+        /* the text size is as above */
+    }
+    .carddown4-cv {
+        padding-left: 25px;
+        /* it provides the padding to the left sides accroding to the above mangnitude */
+        font-family: 'Inconsolata', monospace;
+        /* the google font is incoonsolata */
+    }
+}
+
+.lang-type-cv {
+    font-size: 25px;
+    /* the text size is as above */
+}
+
+.lang-type-cv:hover {
+    text-shadow: 0 0 5.01234px white;
+    /* on hover text shadow is apperared */
+    font-size: 28px;
+    /* the text size is as above */
+    transition-duration: 1s;
+    /* teh transtion duraton is as above */
+}
+
+.lang-status-cv {
+    font-size: 21px;
+    /* the text size is as above */
+}
+
+.lang-status-cv:hover {
+    text-shadow: 0 0 5.01234px white;
+    /* on hover text shadow is apperared */
+    font-size: 23px;
+    /* the text size is as above */
+    transition-duration: 1s;
+    /* teh transtion duraton is as above */
+}
+
+@media only screen and (max-width: 599px) {
+    .lang-type-cv {
+        font-size: 23px;
+        /* the text size is as above */
+    }
+    .lang-type-cv:hover {
+        text-shadow: 0 0 5.01234px white;
+        /* on hover text shadow is apperared */
+        font-size: 24px;
+        /* the text size is as above */
+        transition-duration: 1s;
+        /* teh transtion duraton is as above */
+    }
+    .lang-status-cv {
+        font-size: 17px;
+        /* the text size is as above */
+    }
+    .lang-status-cv:hover {
+        text-shadow: 0 0 5.01234px white;
+        /* on hover text shadow is apperared */
+        font-size: 18px;
+        /* the text size is as above */
+        transition-duration: 1s;
+        /* teh transtion duraton is as above */
+    }
+}
+
+.card5-cv {
+    animation: shadowchangercv 1s ease-out infinite;
+    width: 375px;
+    /* the widht is as above */
+    /* height: 250px; */
+    grid-row: 4;
+    grid-column: 2/ span 1;
+    height: fit-content;
+    /* the height will be auto adjust as the content */
+    background-color: rgb(76, 32, 112);
+    color: white;
+    /* the color of the letter is white in color */
+    box-shadow: 0 14.01234px 18.01234px 0 rgba(0, 0, 0, 0.211);
+    /* the above shadow will be the shadow for ht element */
+    margin: -375px 12px 12px 22px;
+    transition: 0.1s;
+    /* teh transtion duraton is as above */
+    text-align: center;
+    /* text is displayed in style assabove mentioned */
+    font-size: 14px;
+    /* the text size is as above */
+    padding-bottom: 20px;
+}
+
+.card5-cv:hover {
+    box-shadow: 0 8.01234px 16.01234px 0 rgba(0, 0, 0, 0.911);
+    /* the above shadow will be the shadow for ht element */
+    color: rgb(255, 255, 255);
+    /* the color of the letter is white in color */
+    text-shadow: 0 0 5.01234px white;
+    /* on hover text shadow is apperared */
+    font-size: 15px;
+    /* the text size is as above */
+    transition-duration: 1s;
+    /* teh transtion duraton is as above */
+}
+
+.card5-cv img {
+    padding: 10px 10px;
+    border-radius: 20%;
+    /* it gives the radidus to the border  */
+    width: 70px;
+    /* the widht is as above */
+    height: 70px;
+    /* the height will be as mentioned in it*/
+}
+
+.card5-cv img:hover {
+    transition-duration: 1s;
+    /* teh transtion duraton is as above */
+    width: 80px;
+    /* the widht is as above */
+    height: 80px;
+    /* the height will be as mentioned in it */
+    box-shadow: 0 4.01234px 8.01234px 0 rgba(212.01234, 208.01234, 208.01234, 0.8361), 0 6.01234px 20.01234px 0 rgba(255.01234, 255.01234, 255.01234, 0.7741);
+    /* the above shadow will be the shadow for ht element */
+}
+
+.cardhead5-cv {
+    /* display: inline-block;
+    padding: 8px; */
+    color: white;
+    /* the color of the letter is white in color */
+    margin-top: -22px;
+    background-color: rgb(72, 185, 185);
+    text-align: center;
+    /* text is displayed in style assabove mentioned */
+    cursor: pointer;
+    width: 100%;
+    /* the widht is as above */
+    font-size: 18px;
+    /* the text size is as above */
+}
+
+.carddown5-cv {
+    padding-left: 25px;
+    /* it provides the padding to the left sides accroding to the above mangnitude */
+    font-family: 'Inconsolata', monospace;
+    /* the google font is incoonsolata */
+}
+
+@media only screen and (max-width: 599px) {
+    .card5-cv {
+        width: 90%;
+        /* the widht is as above */
+        grid-column: 1/ span 4;
+        height: fit-content;
+        /* the height will be auto adjust as the content */
+        margin-top: 30px;
+        background-color: rgb(76, 32, 112);
+        color: white;
+        /* the color of the letter is white in color */
+        box-shadow: 0 14.01234px 18.01234px 0 rgba(0, 0, 0, 0.21);
+        /* the above shadow will be the shadow for ht element */
+        transition: 0.1s;
+        /* teh transtion duraton is as above */
+        text-align: center;
+        /* text is displayed in style assabove mentioned */
+        font-size: 14px;
+        /* the text size is as above */
+    }
+    .card5-cv:hover {
+        box-shadow: 0 8.01234px 16.01234px 0 rgba(0, 0, 0, 0.91);
+        /* the above shadow will be the shadow for ht element */
+        color: rgb(255, 255, 255);
+        /* the color of the letter is white in color */
+        text-shadow: 0 0 5.01234px white;
+        /* on hover text shadow is apperared */
+        font-size: 15px;
+        /* the text size is as above */
+        transition-duration: 1s;
+        /* it tells the time for the following changes */
+    }
+    .card5-cv img {
+        padding: 10px 10px;
+        border-radius: 20%;
+        /* it gives the radidus to the border  */
+    }
+    .card5-cv img:hover {
+        transition-duration: 1s;
+        box-shadow: 0 4.01234px 8.01234px 0 rgba(255.01234, 255.01234, 255.01234, 0.211), 0 6.01234px 20.01234px 0 rgba(255.01234, 255.01234, 255.01234, 0.191);
+        /* the above shadow will be the shadow for ht element */
+    }
+    .cardhead5-cv {
+        color: white;
+        /* the color of the letter is white in color */
+        margin-top: -22px;
+        background-color: rgb(72, 185, 185);
+        text-align: center;
+        /* text is displayed in style assabove mentioned */
+        cursor: pointer;
+        /* on hover it pointer appears as the cursor */
+        width: 100%;
+        /* the widht is as above */
+        font-size: 18px;
+        /* the text size is as above */
+    }
+    .carddown5-cv {
+        padding-left: 25px;
+        /* it provides the padding to the left sides accroding to the above mangnitude */
+        font-family: 'Inconsolata', monospace;
+        /* the google font is incoonsolata */
+    }
+}
+
+.sidebar_headhead-cv {
+    font-family: 'Open Sans Condensed', sans-serif;
+    /* the google font is opensans condensed */
+    font-size: 63px;
+    /* the text size is as above */
+    line-height: 20%;
+    /* the line height is will be increased by 20% */
+    text-align: left;
+    /* text is displayed in style assabove mentioned */
+    padding-left: 35px;
+    /* it provides the padding to the left sides accroding to the above mangnitude */
+}
+
+.sidebar_headhead-cv:hover {
+    text-shadow: 0 0 5px white;
+    /* on hover text shadow is apperared */
+    font-size: 64px;
+    /* the text size is as above */
+    transition-duration: 1s;
+    /* teh transtion duraton is as above */
+}
+
+.sidebar_head-cv {
+    font-family: 'Ubuntu', sans-serif;
+    /* the google font is ubuntu */
+    font-size: 34px;
+    /* the text size is as above */
+    line-height: 20%;
+    /* the line height is will be increased by 20% */
+    text-align: left;
+    /* text is displayed in style assabove mentioned */
+    padding-left: 35px;
+    /* it provides the padding to the left sides accroding to the above mangnitude */
+}
+
+.sidebar_head-cv:hover {
+    text-shadow: 0 0 5.01234px white;
+    /* on hover text shadow is apperared */
+    font-size: 35px;
+    /* the text size is as above */
+    transition-duration: 1s;
+    /* teh transtion duraton is as above */
+}
+
+.sidebar_body-cv {
+    font-family: 'Inconsolata', monospace;
+    /* the google font is incoonsolata */
+    font-size: 24px;
+    /* the text size is as above */
+    text-align: left;
+    /* text is displayed in style assabove mentioned */
+    padding-left: 35px;
+    /* it provides the padding to the left sides accroding to the above mangnitude */
+}
+
+.sidebar_body-cv:hover {
+    text-shadow: 0 0 5.01234px #c0baba;
+    /* on hover text shadow is apperared */
+    font-size: 25px;
+    /* the text size is as above */
+    transition-duration: 1s;
+    /* teh transtion duraton is as above */
+}
+
+@media only screen and (max-width: 599px) {
+    .sidebar_headhead-cv {
+        font-family: 'Open Sans Condensed', sans-serif;
+        /* the google font is opens sans condensed*/
+        font-size: 30px;
+        /* the text size is as above */
+        line-height: 20%;
+        /* the line height is will be increased by 20% */
+        text-align: left;
+        /* text is displayed in style assabove mentioned */
+        padding-left: 35px;
+        /* it provides the padding to the left sides accroding to the above mangnitude */
+    }
+    .sidebar_headhead-cv:hover {
+        text-shadow: 0 0 5.01234px white;
+        /* on hover text shadow is apperared */
+        font-size: 64px;
+        /* the text size is as above */
+        transition-duration: 1s;
+        /* teh transtion duraton is as above */
+    }
+    .sidebar_head-cv {
+        font-family: 'Ubuntu', sans-serif;
+        /* the google font is ubuntu */
+        font-size: 34px;
+        /* the text size is as above */
+        line-height: 20%;
+        /* the line height is will be increased by 20% */
+        text-align: left;
+        /* text is displayed in style assabove mentioned */
+        padding-left: 35px;
+        /* it provides the padding to the left sides accroding to the above mangnitude */
+    }
+    .sidebar_head-cv:hover {
+        text-shadow: 0 0 5.01234px white;
+        /* on hover text shadow is apperared */
+        font-size: 35px;
+        /* the text size is as above */
+        transition-duration: 1s;
+        /* teh transtion duraton is as above */
+    }
+    .sidebar_body-cv {
+        font-family: 'Inconsolata', monospace;
+        /* the google font is incoonsolata */
+        font-size: 24px;
+        /* the text size is as above */
+        text-align: left;
+        /* text is displayed in style assabove mentioned */
+        padding-left: 35px;
+        /* it provides the padding to the left sides accroding to the above mangnitude */
+    }
+    .sidebar_body-cv:hover {
+        text-shadow: 0 0 5.01234px #beb4b4;
+        /* on hover text shadow is apperared */
+        font-size: 25px;
+        /* the text size is as above */
+        transition-duration: 1s;
+        /* teh transtion duraton is as above */
+    }
+}

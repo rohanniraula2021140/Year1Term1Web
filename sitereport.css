@@ -1,0 +1,475 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.grid-container-site {
+    display: grid;
+    /* divides the screen into grid so that the adjusting the element becaomes easier */
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+    /* this divides the screen into twelve auto parts (column) */
+}
+
+.grid-item-site {}
+
+.grid-item1-site {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    /* the border of the element is as above */
+    font-size: 45px;
+    /* tthe text size is as above */
+    text-align: center;
+    /* align the text in desired way */
+}
+
+@keyframes shadowchangersite {
+    10% {
+        color: rgb(238, 255, 0);
+        /* this sets the color for this */
+        /* text-shadow: 0px 0px 1px rgb(255, 253, 253);provides the desired shadow to the text */
+        box-shadow: 0 8.43434px 12.43434px 0 rgba(0, 0, 0, 0.83232);
+    }
+    20% {
+        color: rgb(166, 255, 0);
+        /* this sets the color for this */
+        /* text-shadow: 0px 0px 1px rgb(248, 193, 193);provides the desired shadow to the text */
+        box-shadow: 0 8.43434px 12.43434px 0 rgba(0, 0, 0, 0.83232);
+    }
+    30% {
+        color: rgb(30, 255, 0);
+        /* this sets the color for this */
+        /* text-shadow: 0px 0px 1px rgb(252, 127, 127);provides the desired shadow to the text */
+        box-shadow: 0 8.43434px 12.43434px 0 rgba(0, 0, 0, 0.83232);
+    }
+    40% {
+        color: rgb(0, 255, 149);
+        /* this sets the color for this */
+        /* text-shadow: ;provides the desired shadow to the text */
+        box-shadow: 0 8.43434px 12.43434px 0 rgba(255, 0, 0, 0.832);
+    }
+    50% {
+        color: rgb(0, 174, 255);
+        /* this sets the color for this */
+        /* text-shadow: 0px 18px 18px rgb(115, 247, 103);provides the desired shadow to the text */
+        box-shadow: 0 8.43434px 12.43434px 0 rgba(255, 94, 0, 0.832);
+    }
+    60% {
+        color: rgb(0, 225, 255);
+        /* this sets the color for this */
+        /* text-shadow: ;provides the desired shadow to the text */
+        box-shadow: 0 8.43434px 12.43434px 0 rgba(255, 196, 2, 0.832);
+    }
+    70% {
+        color: rgb(0, 47, 255);
+        /* this sets the color for this */
+        /* text-shadow: ;provides the desired shadow to the text */
+        box-shadow: 0 8.43434px 12.43434px 0 rgba(60, 255, 1, 0.832);
+    }
+    80% {
+        color: rgb(38, 0, 255);
+        /* this sets the color for this */
+        /* text-shadow: 0px 16px 6px rgb(214, 243, 86);provides the desired shadow to the text */
+        box-shadow: 0 8.43434px 12.43434px 0 rgba(2, 255, 150, 0.832);
+    }
+    90% {
+        color: rgb(247, 0, 255);
+        /* this sets the color for this */
+        /* text-shadow: ;provides the desired shadow to the text */
+        box-shadow: 0 8.43434px 12.43434px 0 rgba(0, 47, 255, 0.832);
+    }
+    100% {
+        color: rgb(255, 0, 43);
+        /* this sets the color for this */
+        /* text-shadow: 0px 20px 20px rgb(19, 111, 248);provides the desired shadow to the text */
+        box-shadow: 0 4.4343px 5.3434px 0 rgba(255, 2, 141, 0.747);
+    }
+}
+
+.site_box-site {
+    grid-column: 2/12;
+    /* grid makes the box start from the 2th column and end at the 12th column */
+    text-align: center;
+    /* the text is centered aligned */
+    color: white;
+    /* this sets the color for this */
+    width: 100%;
+    /* the widht is 100% */
+    font-size: 30px;
+    /* this displays the text in the size mentioned above */
+    background: rgb(2, 65, 10);
+    /* background set the overal color so that above the gradient seems good */
+    background: linear-gradient(174deg, rgb(47, 4, 71) 3%, rgb(19, 35, 39) 36%, rgb(85, 37, 6) 100%);
+    /* the multiple color are used the different degrree to maek the linear gradient special and awesome  */
+    box-shadow: rgba(0, 0, 0, 0.25232) 10.12312px 54.12323px 55.12312px, rgba(0, 0, 0, 0.122132) 0px -12.123123px 30.1232px, rgba(0, 0, 0, 0.121) 0px 4.123123px 6.313px, rgba(0, 0, 0, 0.1711) 0px 12.123123px 13.12312px, rgba(0, 0, 0, 0.09123) 0px -3.1232px 5.123123px;
+    /* the above shadow will be the shadow for ht element */
+}
+
+.site_box-site p {
+    font-size: 25px;
+}
+
+.site_box-site .mainheading {
+    letter-spacing: -7.2323234px;
+    /* thher letter are spaced accordig to above value */
+    font-size: 100px;
+    /* this displays the text in the size mentioned above */
+    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+    /* provides the desired shadow to the text */
+    font-weight: 700;
+    /* the letter are displayed more densed */
+    text-align: center;
+    /* the txt are cnetered aligned */
+    text-transform: uppercase;
+    /* animation: onlycolorchangersite 2.343s ease-out infinite; */
+    /* letter are at the uppercase */
+    animation: colorchangersite 2.343s ease-out infinite;
+    /* tis is the way of declaring animation  */
+}
+
+.site_box-site h2 {
+    animation: onlycolorchangersite 2.343s ease-out infinite;
+}
+
+.site_box-site h3 {
+    animation: onlycolorchangersite 2.343s ease-out infinite;
+}
+
+.datesite-site {
+    float: right;
+    font-weight: 800;
+    animation: onlytextshadowchangersite 1s ease-in-out infinite;
+}
+
+.classforimage {
+    width: 60%;
+    height: auto;
+}
+
+.gitimg {
+    width: 60%;
+    height: auto;
+}
+
+.gitimg2 {
+    height: auto;
+    width: 50%;
+}
+
+.gitimg3 {
+    width: 30%;
+    height: auto;
+}
+
+
+/* https: //www.hongkiat.com/blog/css-text-effects/ */
+
+@keyframes onlytextshadowchangersite {
+    10% {
+        /* color: rgb(238, 255, 0); */
+        /* this sets the color for this */
+        text-shadow: 1.123px 11.12312px 1.123123px rgb(1.46, 59.324234, 4.4264);
+        /* provides the desired shadow to the text */
+    }
+    20% {
+        /* color: rgb(166, 255, 0); */
+        /* this sets the color for this */
+        text-shadow: 11px 15px 0px rgb(255, 255, 255);
+        /* provides the desired shadow to the text */
+    }
+    30% {
+        /* color: rgb(30, 255, 0); */
+        /* this sets the color for this */
+        text-shadow: 12px 17px 2px rgb(90, 3, 29);
+        /* provides the desired shadow to the text */
+    }
+    40% {
+        /* color: rgb(0, 255, 149); */
+        /* this sets the color for this */
+        /* text-shadow: ; */
+        /* provides the desired shadow to the text */
+    }
+    50% {
+        color: rgb(0, 174, 255);
+        /* this sets the color for this */
+        text-shadow: 12px 24px 0px rgb(92, 8, 8);
+        /* provides the desired shadow to the text */
+    }
+    60% {
+        /* color: rgb(0, 225, 255); */
+        /* this sets the color for this */
+        /* text-shadow: ; */
+        /* provides the desired shadow to the text */
+    }
+    70% {
+        color: rgb(0, 47, 255);
+        /* this sets the color for this */
+        /* text-shadow: ; */
+        /* provides the desired shadow to the text */
+    }
+    80% {
+        color: rgb(38, 0, 255);
+        /* this sets the color for this */
+        text-shadow: 1px 27px 1px rgb(12, 41, 136);
+        /* provides the desired shadow to the text */
+    }
+    90% {
+        /* color: rgb(247, 0, 255); */
+        /* this sets the color for this */
+        /* text-shadow: ; */
+        /* provides the desired shadow to the text */
+    }
+    100% {
+        color: rgb(255, 0, 43);
+        /* this sets the color for this */
+        text-shadow: 1px 30px 0px rgb(255, 255, 255);
+        /* provides the desired shadow to the text */
+    }
+}
+
+@keyframes onlycolorchangersite {
+    10% {
+        color: rgb(238, 255, 0);
+        /* this sets the color for this */
+        /* text-shadow: 0px 0px 1px rgb(255, 253, 253); */
+        /* provides the desired shadow to the text */
+    }
+    20% {
+        color: rgb(166, 255, 0);
+        /* this sets the color for this */
+        /* text-shadow: 0px 0px 1px rgb(248, 193, 193); */
+        /* provides the desired shadow to the text */
+    }
+    30% {
+        color: rgb(30, 255, 0);
+        /* this sets the color for this */
+        /* text-shadow: 0px 0px 1px rgb(252, 127, 127); */
+        /* provides the desired shadow to the text */
+    }
+    40% {
+        color: rgb(0, 255, 149);
+        /* this sets the color for this */
+        /* text-shadow: ; */
+        /* provides the desired shadow to the text */
+    }
+    50% {
+        color: rgb(0, 174, 255);
+        /* this sets the color for this */
+        /* text-shadow: 0px 18px 18px rgb(115, 247, 103); */
+        /* provides the desired shadow to the text */
+    }
+    60% {
+        color: rgb(0, 225, 255);
+        /* this sets the color for this */
+        /* text-shadow: ; */
+        /* provides the desired shadow to the text */
+    }
+    70% {
+        color: rgb(0, 47, 255);
+        /* this sets the color for this */
+        /* text-shadow: ; */
+        /* provides the desired shadow to the text */
+    }
+    80% {
+        color: rgb(38, 0, 255);
+        /* this sets the color for this */
+        /* text-shadow: 0px 16px 6px rgb(214, 243, 86); */
+        /* provides the desired shadow to the text */
+    }
+    90% {
+        color: rgb(233, 145, 236);
+        /* this sets the color for this */
+        /* text-shadow: ; */
+        /* provides the desired shadow to the text */
+    }
+    100% {
+        color: rgb(255, 0, 43);
+        /* this sets the color for this */
+        /* text-shadow: 0px 20px 20px rgb(19, 111, 248); */
+        /* provides the desired shadow to the text */
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .site_box-site .mainheading {
+        letter-spacing: -3.63456px;
+        grid-row: 2;
+        /* the letter are spaced in this ration */
+        font-size: 45px;
+        /* this displays the text in the size mentioned above */
+        text-shadow: 0px 0px 1.234px #fff, 0px 0px 2.23454345px #fff;
+        /* provides the desired shadow to the text */
+        font-weight: 700;
+        /* letter are heavily weighted  */
+        width: 100%;
+        /* the width of the box is as much it can take inside the column  */
+        grid-column: 2/12;
+        /* the grid makes the element to start from the 2th to 12th column */
+        text-align: center;
+        /* the textare aligned at the center */
+        text-transform: uppercase;
+        /* the letter are seen in upper case */
+        animation: colorchangersite .7235s ease-out infinite;
+        /* this is way of setting animation */
+        color: rgb(233, 229, 229);
+        /* this sets the color for this */
+    }
+}
+
+.navbarsiteqwertyuiop-site {
+    overflow: hidden;
+    /* background-color : #333; */
+    grid-column: 3/13;
+    grid-row: 1;
+}
+
+.navbarsiteqwertyuiop-site a {
+    float: left;
+    /* the elelement will float in the left side of the screen  */
+    display: block;
+    /* the browser will treat ast the block element */
+    color: #f2f2f2;
+    /* this sets the color for this */
+    text-align: center;
+    /* text is centered aligned */
+    padding: 14px 16px;
+    /* the padding of the top bottom is first one and right left is second one */
+    text-decoration: none;
+    /* the bullet is removed */
+    font-size: 17px;
+    /* this displays the text in the size mentioned above */
+    background-color: rgb(3, 44, 41);
+    /* the bg color is as above */
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@media only screen and (min-width:600px) {
+    .navbarsiteqwertyuiop-site a {
+        width: 125px;
+        height: 40px;
+        background-color: rgb(1, 27, 39);
+        padding: 20px;
+        font-size: 23px;
+    }
+}
+
+.navbarsiteqwertyuiop-site a:hover {
+    background-color: rgb(48, 3, 3);
+    /* the bg color is as above */
+    color: black;
+    transition-duration: 1s;
+    box-shadow: 0 4.123123px 8.456px 0 rgba(0, 0, 0, 0.2345), 0 6.3456px 20.745345px 0 rgba(0, 0, 0, 0.19345345);
+    /* the above shadow will be the shadow for ht element */
+    animation: colorchangersite 0.7s ease-out infinite;
+}
+
+@keyframes colorchangersite {
+    10% {
+        color: rgb(238, 255, 0);
+        /* this sets the color for this */
+        text-shadow: 0px 0px 1px rgb(255, 253, 253);
+        /* provides the desired shadow to the text */
+    }
+    20% {
+        color: rgb(166, 255, 0);
+        /* this sets the color for this */
+        text-shadow: 0px 0px 1px rgb(248, 193, 193);
+        /* provides the desired shadow to the text */
+    }
+    30% {
+        color: rgb(30, 255, 0);
+        /* this sets the color for this */
+        text-shadow: 0px 0px 1px rgb(252, 127, 127);
+        /* provides the desired shadow to the text */
+    }
+    40% {
+        color: rgb(0, 255, 149);
+        /* this sets the color for this */
+        /* provides the desired shadow to the text */
+    }
+    50% {
+        color: rgb(0, 174, 255);
+        /* this sets the color for this */
+        text-shadow: 0px 18px 18px rgb(115, 247, 103);
+        /* provides the desired shadow to the text */
+    }
+    60% {
+        color: rgb(0, 225, 255);
+        /* this sets the color for this */
+        /* provides the desired shadow to the text */
+    }
+    70% {
+        color: rgb(0, 47, 255);
+        /* this sets the color for this */
+        /* provides the desired shadow to the text */
+    }
+    80% {
+        color: rgb(38, 0, 255);
+        /* this sets the color for this */
+        text-shadow: 0px 16px 6px rgb(214, 243, 86);
+        /* provides the desired shadow to the text */
+    }
+    90% {
+        color: rgb(247, 0, 255);
+        /* this sets the color for this */
+        /* provides the desired shadow to the text */
+    }
+    100% {
+        color: rgb(255, 0, 43);
+        /* this sets the color for this */
+        text-shadow: 0px 20px 20px rgb(19, 111, 248);
+        /* provides the desired shadow to the text */
+    }
+}
+
+.navbarsiteqwertyuiop-site a.active {
+    background-color: rgb(19, 3, 48);
+    /* the bg color is as above */
+    color: white;
+    box-shadow: 0 2.2431px 4.11424px 0 rgba(0, 0, 0, 0.21234), 0 6.12312px 20.25345px 0 rgba(0, 0, 0, 0.19234);
+    /* the above shadow will be the shadow for ht element */
+    animation: colorchangersite 0.7s ease-out infinite;
+}
+
+.navbarsiteqwertyuiop-site .threelinesiteqwerty-site {
+    display: none;
+    /* the display of the icon will not be seen  */
+    /* because if it will be seen in the large screen then it will not meet the requirement */
+}
+
+@media only screen and (max-width: 600px) {
+    .navbarsiteqwertyuiop-site a:not(:first-child) {
+        display: none;
+        /* only first element will be seen remainng will not be seeen */
+    }
+    .navbarsiteqwertyuiop-site a.threelinesiteqwerty-site {
+        float: right;
+        /* the icon will float right part fo the screen */
+        display: block;
+        /* the icon will be treated as the block */
+    }
+    .navbarsiteqwertyuiop-site {
+        width: 100%;
+        /* the navigation bar will allocate the full 100% width */
+        grid-column: 1/13;
+        /* as it is in small screen it will take all the column to be appropriate */
+    }
+    .navbarsiteqwertyuiop-site a {
+        font-size: 17px;
+        padding: 14px 16px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navbarsiteqwertyuiop-site.smallscrn-site {
+        /* here media screen is the query which will be only valid if the device screen is maximum 599px if it is more than that  */
+        /* the default css will be applied */
+        position: relative;
+        /* this two class will have postion relative */
+        /* here this will be only applied if both topnav and responsive will be met and that will be done by js written in the script file */
+    }
+    .navbarsiteqwertyuiop-site.smallscrn-site a {
+        float: none;
+        /* the anchor tag will not float now */
+        display: block;
+        /* the anchor will be treated as the block */
+        text-align: left;
+        /* the letter will be left part of the screen */
+    }
+}

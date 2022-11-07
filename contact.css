@@ -1,0 +1,760 @@
+body {
+    background-color: rgb(88, 18, 18);
+    /* added gradient to the body and here i have used three color means it creates gradient with 3 colorin linear way */
+}
+
+.grid-container-con {
+    display: grid;
+    /* This makes the display in the grid  */
+    grid-template-columns: 25% 25% 25% 25%;
+    /* this means i have divided the whole page into four section in a equal 4 parts  */
+    transition-duration: 1s;
+    /* This is just to make the overal transition of the elements and it also revert the transition after the hovering from the elements */
+}
+
+.navbarconqwertyuiop-con {
+    overflow: hidden;
+    /* any more contents that triggers the scroll bar , the overflow hidden prevents the scroll bar from showing up */
+    order: 0;
+    /* here i have used the order system that means the grid will determine which to display first according to the order value */
+    transition-duration: 1s;
+    /* this gives the time for the transition  */
+    grid-column: 2/ span 3;
+    /* grid column allocates the column for the element in this case it has allocated from column 2 to 3 */
+    grid-row: 1;
+    /* grid determines to place the content at which row with the help of the gridrow */
+}
+
+.navbarconqwertyuiop-con a {
+    float: left;
+    /* here letters are pushed to left side */
+    display: block;
+    /* the content is displayed in the block system */
+    color: #f2f2f2;
+    /* color gives the colour */
+    text-align: center;
+    /* the text will be placed in the center */
+    padding: 14px 16px;
+    /* here top padding is 14px and bottom padding is 16px */
+    text-decoration: none;
+    /* here the underline of anchor tag will be none */
+    transition-duration: 1s;
+    /* the time transition will be 1s */
+    font-size: 17px;
+    /* font will be displayed in 17px */
+    background-color: rgb(65, 50, 1);
+    /* the background color will be according to the rbg value */
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@keyframes shadowchangercon {
+    10% {
+        color: rgb(238, 255, 0);
+        /* this sets the color for this */
+        /* text-shadow: 0px 0px 1px rgb(255, 253, 253);provides the desired shadow to the text */
+        box-shadow: 0 8.43434px 12.43434px 0 rgba(0, 0, 0, 0.83232);
+    }
+    20% {
+        color: rgb(166, 255, 0);
+        /* this sets the color for this */
+        /* text-shadow: 0px 0px 1px rgb(248, 193, 193);provides the desired shadow to the text */
+        box-shadow: 0 8.43434px 12.43434px 0 rgba(0, 0, 0, 0.83232);
+    }
+    30% {
+        color: rgb(30, 255, 0);
+        /* this sets the color for this */
+        /* text-shadow: 0px 0px 1px rgb(252, 127, 127);provides the desired shadow to the text */
+        box-shadow: 0 8.43434px 12.43434px 0 rgba(0, 0, 0, 0.83232);
+    }
+    40% {
+        color: rgb(0, 255, 149);
+        /* this sets the color for this */
+        /* text-shadow: ;provides the desired shadow to the text */
+        box-shadow: 0 8.43434px 12.43434px 0 rgba(255, 0, 0, 0.832);
+    }
+    50% {
+        color: rgb(0, 174, 255);
+        /* this sets the color for this */
+        /* text-shadow: 0px 18px 18px rgb(115, 247, 103);provides the desired shadow to the text */
+        box-shadow: 0 8.43434px 12.43434px 0 rgba(255, 94, 0, 0.832);
+    }
+    60% {
+        color: rgb(0, 225, 255);
+        /* this sets the color for this */
+        /* text-shadow: ;provides the desired shadow to the text */
+        box-shadow: 0 8.43434px 12.43434px 0 rgba(255, 196, 2, 0.832);
+    }
+    70% {
+        color: rgb(0, 47, 255);
+        /* this sets the color for this */
+        /* text-shadow: ;provides the desired shadow to the text */
+        box-shadow: 0 8.43434px 12.43434px 0 rgba(60, 255, 1, 0.832);
+    }
+    80% {
+        color: rgb(38, 0, 255);
+        /* this sets the color for this */
+        /* text-shadow: 0px 16px 6px rgb(214, 243, 86);provides the desired shadow to the text */
+        box-shadow: 0 8.43434px 12.43434px 0 rgba(2, 255, 150, 0.832);
+    }
+    90% {
+        color: rgb(247, 0, 255);
+        /* this sets the color for this */
+        /* text-shadow: ;provides the desired shadow to the text */
+        box-shadow: 0 8.43434px 12.43434px 0 rgba(0, 47, 255, 0.832);
+    }
+    100% {
+        color: rgb(255, 0, 43);
+        /* this sets the color for this */
+        /* text-shadow: 0px 20px 20px rgb(19, 111, 248);provides the desired shadow to the text */
+        box-shadow: 0 4.4343px 5.3434px 0 rgba(255, 2, 141, 0.747);
+    }
+}
+
+.navbarconqwertyuiop-con a:hover {
+    background-color: rgb(34, 1, 1);
+    /* the backgorund color will be white */
+    color: black;
+    transition-duration: 1s;
+    /* the font color will be black */
+    box-shadow: 0 4.44px 8.44px 0 rgba(15, 15, 15, 0.192), 0 6.43px 20.456px 0 rgba(24, 22, 22, 0.253);
+    /* the multiple shadows are merged into one to make it unique and special one ..  */
+    animation: colorchangersite 0.7s ease-out infinite;
+}
+
+@keyframes colorchangersite {
+    10% {
+        color: rgb(238, 255, 0);
+        /* this sets the color for this */
+        text-shadow: 0.01234px 0.01234px 1.01234px rgb(255, 253, 253);
+        /* provides the desired shadow to the text */
+    }
+    20% {
+        color: rgb(166, 255, 0);
+        /* this sets the color for this */
+        text-shadow: 0px 0px 1px rgb(248, 193, 193);
+        /* provides the desired shadow to the text */
+    }
+    30% {
+        color: rgb(30, 255, 0);
+        /* this sets the color for this */
+        text-shadow: 0px 0px 1px rgb(252, 127, 127);
+        /* provides the desired shadow to the text */
+    }
+    40% {
+        color: rgb(0, 255, 149);
+        /* this sets the color for this */
+        /* provides the desired shadow to the text */
+    }
+    50% {
+        color: rgb(0, 174, 255);
+        /* this sets the color for this */
+        text-shadow: 0px 18px 18px rgb(115, 247, 103);
+        /* provides the desired shadow to the text */
+    }
+    60% {
+        color: rgb(0, 225, 255);
+        /* this sets the color for this */
+        /* provides the desired shadow to the text */
+    }
+    70% {
+        color: rgb(0, 47, 255);
+        /* this sets the color for this */
+        /* provides the desired shadow to the text */
+    }
+    80% {
+        color: rgb(38, 0, 255);
+        /* this sets the color for this */
+        text-shadow: 0px 16.01234px 6.01234px rgb(214, 243, 86);
+        /* provides the desired shadow to the text */
+    }
+    90% {
+        color: rgb(247, 0, 255);
+        /* this sets the color for this */
+        /* provides the desired shadow to the text */
+    }
+    100% {
+        color: rgb(255, 0, 43);
+        /* this sets the color for this */
+        text-shadow: 0px 20.01234px 20.01234px rgb(19, 111, 248);
+        /* provides the desired shadow to the text */
+    }
+}
+
+@media only screen and (min-width:600px) {
+    .navbarconqwertyuiop-con a {
+        width: 125px;
+        height: 40px;
+        background-color: rgb(1, 27, 39);
+        padding: 20px;
+        font-size: 23px;
+    }
+}
+
+.navbarconqwertyuiop-con a.active {
+    background-color: rgb(17, 2, 44);
+    /* the background color of the anchor tag when active will be according to this rgb value  */
+    /* here i have made it dark because the color in the dark provides good texture and text shadows  */
+    /* will be good */
+    color: white;
+    /* white color letter will be seen */
+    box-shadow: 0 2.01234px 4.01234px 0 rgba(0, 0, 0, 0.21), 0 6.01234px 20.01234px 0 rgba(0, 0, 0, 0.19);
+    animation: colorchangersite 0.7s ease-out infinite;
+}
+
+.navbarconqwertyuiop-con .threelineconqwerty-con {
+    display: none;
+    /* the display of the icon will not be seen  */
+    /* because if it will be seen in the large screen then it will not meet the requirement */
+}
+
+@media screen and (max-width: 600px) {
+    .navbarconqwertyuiop-con a:not(:first-child) {
+        display: none;
+        /* only first element will be seen remainng will not be seeen */
+    }
+    .navbarconqwertyuiop-con a.threelineconqwerty-con {
+        float: right;
+        /* the icon will float right part fo the screen */
+        display: block;
+        /* the icon will be treated as the block */
+    }
+    .navbarconqwertyuiop-con {
+        width: 100%;
+        /* the navigation bar will allocate the full 100% width */
+        grid-column: 1/5;
+        /* as it is in small screen it will take all the column to be appropriate */
+    }
+    .navbarconqwertyuiop-con a:not(:last-child) {
+        grid-column: 1/4;
+        /* as it only for the achor name is will take approx 95% of space and that is here about 3 column */
+    }
+    .threelineconqwerty-con {
+        grid-column: 4/5;
+        /* for icon it will barely take about 5% space so it only takes one column */
+    }
+}
+
+@media screen and (max-width:599px) {
+    /* here media screen is the query which will be only valid if the device screen is maximum 599px if it is more than that  */
+    /* the default css will be applied */
+    .navbarconqwertyuiop-con .smallscrn-con {
+        position: relative;
+        /* this two class will have postion relative */
+        /* here this will be only applied if both topnav and responsive will be met and that will be done by js written in the script file */
+    }
+    .navbarconqwertyuiop-con .smallscrn-con a {
+        float: none;
+        /* the anchor tag will not float now */
+        display: block;
+        /* the anchor will be treated as the block */
+        text-align: left;
+        /* the letter will be left part of the screen */
+    }
+}
+
+.getintouch-con {
+    background-color: rgb(129, 55, 6);
+    /* the eleemtn willl have background color according to the rgb value */
+    width: 500px;
+    /* the width of the element will be 500px */
+    grid-column: 2/ span 2;
+    animation: shadowchangercon 1s ease-out infinite;
+    /* it will take total 2 column and it will start from 2th columnn */
+    padding: 5px 0px 65px 250px;
+    /* the element will have top right bottom left padding 5px 0px 65px 250px respectively */
+    grid-row: 2;
+    /* the element will start from 2nd row */
+    margin-left: 100px;
+    margin-bottom: 30px;
+    /* the element will 100px far from the left side */
+    height: fit-content;
+    /* the element height will be determined by the content more the content more the height and vice versa */
+    margin-top: 40px;
+    /* the element will have 40px top distance than other eleement */
+    order: 3;
+    /* here order is 3 that means the element having order 2 will displayed first by the grid layout of the css */
+    z-index: 1;
+    /* the element will be just at the screen no under and up the screen */
+}
+
+.getintouch-con:hover {
+    /* hover means when cursur is upward the element then webpage will use this sheets */
+    background-color: rgb(25, 6, 75);
+    /* here the element will get background color according to the rgb value */
+    transition-duration: 10s;
+    /* the time for transition is 10s */
+}
+
+
+/* media query fro get into pc started */
+
+@media only screen and (max-width:599px) {
+    /* the screen lessar than 600px the down query will be applied */
+    .getintouch-con {
+        background-color: rgb(129, 55, 6);
+        /* the element in small  will get background accordig to the rgb values */
+        width: 80%;
+        /* the width of element in the small screen is 80% */
+        padding-left: 50px;
+        /* content in left side is 50px far from the border */
+        margin-left: 10px;
+        /* the element has the 10px left margin area */
+        padding-top: 5px;
+        /* content will have 5px top-distance than border */
+        padding-bottom: 65px;
+        /* content will be placed with 65px bottom distance than border */
+        grid-column: 1/ span4;
+        /* the element will take 4 columns starting from the 1th columns */
+        grid-row: 3;
+        /* the element will be presented from the 3rd row  */
+        height: fit-content;
+        /* the content in the element will determing the height of the element */
+        order: 3;
+        /* grid will order this element after the order 2th eleemtn */
+    }
+    .getintouch-con:hover {
+        background-color: rgb(25, 6, 75);
+        /* this eleent will get bg color according to the rgb value on hover */
+        transition-duration: 10s;
+        /* the transition time is 10s on hover for this element */
+    }
+    .getintouch-con h2 {
+        color: white;
+        /* the h2 will get color white  */
+        transition-duration: 1s;
+        /* the transition duration is written here as it is applied after the leaving it */
+        /* in this case when it is written in the case of the hover hte transition will have 10s time but after  */
+        /* the hover it comes to the its original size at sight. So to prevent this it is writteen here */
+    }
+    .feelfree-con {
+        transition-duration: 1s;
+        /* it provide the time for he duration  */
+        color: rgb(12, 194, 194);
+        /* font color are according to the rgb value */
+        text-shadow: 1px 1px rgb(34, 22, 22);
+        /* text shadow are according to the px px and rgb value */
+        font-family: 'Roboto Mono', monospace;
+        /* here i have used google font  */
+        /* font type is roboto mono */
+        font-size: 20px;
+        /* letter will have 20px size */
+    }
+    .feelfree-con:hover {
+        /* on hover followign changes will be seen at the feelfree text */
+        font-size: 20.5px;
+        /* the letter will have this size */
+        color: rgb(17, 233, 233);
+        /* the color fo the letter are according to the rgb value */
+    }
+    .getintouch-con h2 {
+        font-family: 'Roboto Mono', monospace;
+        /* google font is used here and rogboto mono is the font type */
+        font-weight: bold;
+        /* letter will be bold */
+        font-size: 30px;
+        /* letter will have 30px size */
+    }
+    .getintouch h2:hover {
+        /* on hover following changes will be seen */
+        font-size: 30.5px;
+        /* letter will have thsi size on hover */
+        color: rgb(109, 5, 53);
+        /* color will be changed to this on hover */
+        text-shadow: 1.01234px 1.01234px rgb(245, 244, 244);
+        /* shadow will be change on hover */
+    }
+    .getintouch-con textarea {
+        width: 90%;
+        /* the text area will have 90% width fo teh getintouch(element)'s element */
+        height: 80px;
+        /* the text area will have 80px height */
+        margin-bottom: 30px;
+        /* the elemetn will have 30px bottom margin */
+        font-family: 'Roboto Mono', monospace;
+        /* the font family will be roboto mono google font is used */
+    }
+    input {
+        padding: 10px 14px;
+        /* the vertical  padding is 10px and horizontal padding is 14px  */
+        transition-duration: 0.5s;
+        /* the transition for the element will take 0.5s */
+        margin: 12px 12px;
+        /* the top bottom margin is 12px and right left margin is 12px */
+        font-family: 'Roboto Mono', monospace;
+        /* the font-typw is robotaomono (googlefonts) */
+        color: rgb(20, 82, 30);
+        /* the letter will have green color */
+        font-weight: bold;
+        /* bold letter will be seen in the input */
+    }
+    input:hover {
+        border: 3px solid rgb(7, 28, 121);
+        /* on hover the the blue border will be seen in the screen where we type */
+    }
+    .rohan-con {
+        z-index: 3;
+        /* the index is 3 means it is 3 step upper then screen if screen is considered as the origin */
+    }
+}
+
+
+/* media query for getintouch ended */
+
+
+/* media query for getintouch ended */
+
+.getintouch-con h2 {
+    color: white;
+    /* 2nd heading letters will be seen in the white */
+    transition-duration: 1s;
+    /* hte transition time will be 1s */
+}
+
+.feelfree-con {
+    transition-duration: 1s;
+    /* the transition will be done in 1s */
+    color: rgb(12, 194, 194);
+    /* the color of the letter are accoding to rgb values */
+    text-shadow: 1.01234px 1.01234px rgb(34, 22, 22);
+    /* the shadow will be nearly black with 1px of the widht */
+    /* the google font is seen and it is roboto mono */
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    /* the size of the letter will be 20px */
+}
+
+.feelfree-con:hover {
+    font-size: 20.5px;
+    /* on hover hte letter size will be 20.5px */
+    color: rgb(17, 233, 233);
+    /* on hover the color of the letter will be change to this rgb values */
+}
+
+.getintouch-con h2 {
+    font-family: 'Roboto Mono', monospace;
+    /* the 2nd heading will be roboto mono and it si from goooglefonts */
+    font-weight: bold;
+    /* the heading letters will be bold */
+    font-size: 30px;
+    /* the second heading letters will be 30px sized */
+}
+
+.getintouch h2:hover {
+    font-size: 30.5px;
+    /* on hover second heading letters will be sized to 30.4px; */
+    color: rgb(109, 5, 53);
+    /* on hovered the secnd headign letters will be colored slight red */
+    text-shadow: 1.01234px 1.01234px rgb(245, 244, 244);
+    /* text shadow will be white on hovered on secondheading of getintouch */
+}
+
+.getintouch-con textarea {
+    padding: 12px 14px;
+    /* get-intouch textarea will be topbottom padded 12px and right left padded 14px */
+    margin-left: 13px;
+    /* text area wil have 13px margin area in left */
+    width: 60%;
+    /* the width fot ehtext area iwll be 60$ */
+    height: 30px;
+    /* the height of the text area will be 30px; */
+    font-family: 'Roboto Mono', monospace;
+    /* the gogle font has been used and it si roboto mono and  */
+    /* mono space si there if incase the first font is not available */
+}
+
+input {
+    padding: 10px 14px;
+    /* topbottom padding 10px and rightleftpadding 14px for the input */
+    transition-duration: 0.5s;
+    /* the transition time is 0.5s */
+    margin: 12px 12px;
+    /* the top bottom margin is 12px and rightleft margin is 12px */
+    font-family: 'Roboto Mono', monospace;
+    /* the font-type is roboto mono and it si googl fonts */
+    color: rgb(20, 82, 30);
+    /* letters are presented in the color as the upper rgb  */
+    font-weight: bold;
+    /* the letter will be bold */
+}
+
+input:hover {
+    border: 3px solid rgb(7, 28, 121);
+    /* on hover the border of 3px solid blue will be formed */
+}
+
+.rohan-con {
+    z-index: 3;
+    /* is is 3 step upward from the orgin  */
+}
+
+.submitbtn-con {
+    color: white;
+    animation: shadowchangercon 0.7s ease-out infinite;
+    /* the color of the letter are wihite */
+    background-color: rgb(133, 42, 42);
+    /* the button will have red like color as the background  */
+    width: 100px;
+    /* the widht of the button is 100px */
+    font-size: 20px;
+    /* the letter present inside the button is 20px */
+    border-radius: 25%;
+    /* the border of the readius is 25% means the edge is radial */
+    padding: 14px 15px;
+    /* the rightleft padding is 14px and topbottom padding is 15px */
+    transition-duration: 1s;
+    /* the transition timing for the button on hover is 1s */
+    border: none;
+    /* the border is none means the earlier border of the input type submit is removed */
+    text-align: center;
+    /* the text is center aligned */
+    box-shadow: 2.01234px 6.01234px rgb(209, 197, 197);
+    /* the box shadow of the btn will be like white */
+}
+
+.submitbtn-con:hover {
+    background-color: white;
+    /* the bg color of the  submit button on hover is white */
+    border: 2px solid rgb(133, 42, 42);
+    /* the borderof the submit btn on hover is red */
+    box-shadow: 2.01234px 4.01234px rgb(88, 84, 84);
+    /* the box shadow of the submit btn is like gry on hover */
+    color: rgb(133, 42, 42);
+    /* the letter are red like color in the submit btn */
+    cursor: pointer;
+    /* the cursor while hover at the submit btn is pointer */
+}
+
+
+/* getintouch ended  */
+
+
+/* getintouch ended  */
+
+.contactbox-con {
+    background-color: rgb(133, 42, 42);
+    animation: shadowchangercon 0.7s ease-out infinite;
+    /* the bg color of the contact box is as the rgb value */
+    width: 350px;
+    /* the width of the contact box will be 350px */
+    height: 400px;
+    /* The height of the contact box will be sized 400px */
+    grid-column: 1/span1;
+    /* the contactbox will start from the 1st columna and take only one column */
+    grid-row: 2;
+    /* the contact box be presented inthe second row  */
+    margin-top: 75px;
+    /* the element has 75px upper margin */
+    margin-left: 305px;
+    /* the element ha 305 left margin area */
+    transition-duration: 10s;
+    /* the transition takes 10s to complette */
+    order: 1;
+    /* the order is one because it is first shown then the getintouch box */
+    z-index: 2;
+    /* z-index: 2 means it is 2nd step from the origin if the origin is consisdered as the screen */
+    box-shadow: 1.01234px 4.01234px rgb(37, 10, 10);
+    /* the box-shadow is the nearly black and it si 1px 4 px black */
+    font-size: 24px;
+    /* letter in the contactbox need to be in 24px */
+}
+
+.contactbox-con:hover {
+    background-color: rgb(5, 13, 78);
+    /* on hover the background color must be changed */
+    transition-duration: 10s;
+    /* it will take the 10s to complete */
+}
+
+.contactbox-con h2 {
+    font-size: 40px;
+    /* 2nd heading will be iszed 40px */
+    transition-duration: 1s;
+    /* the transition will take 1s itme */
+    padding-left: 25px;
+    /* the padding at the left side will have magnitude as 25px */
+    color: rgb(238, 214, 214);
+    /* the color at the 2nd heading is according to rgb */
+    font-family: 'Prompt', sans-serif;
+    /* the font family is from google and it si prompt */
+}
+
+.contactbox-con h2:hover {
+    color: rgb(255, 255, 255);
+    /* the hover letter color will change to white */
+    font-size: 40.5px;
+    /* on hover the fontsize of the 2md heading will be changed */
+    text-shadow: 1.01234px 1.01234px rgb(82, 73, 73);
+    /* the text shadow wil be according to the mangnitude */
+}
+
+.contactbox-con li {
+    list-style-type: none;
+    /* the list usually has bullet sign affter adding this it style will be none */
+    color: rgb(165, 137, 137);
+    /* the color of the list item will be none */
+    font-size: 18px;
+    /* the font-size of the list item will be  18px */
+    transition-duration: 1s;
+    /* the transistion duration si 1s for list item */
+    font-family: 'Source Code Pro', monospace;
+    /* gogole font source code pro si seen here */
+}
+
+.contactbox-con li a:hover {
+    color: white;
+    /* on hover white color is seen */
+    font-size: 18.5px;
+    /* on hover anchor size will be changed  */
+    text-shadow: 1.01234px 1.01234px rgb(121, 99, 99);
+    /* on hover the  anchor text shadow willb e changed */
+}
+
+.contactbox-con li:hover {
+    color: white;
+    /* on hover list item color will be change */
+    font-size: 18.5px;
+    /* on hover the font size of the list item will be changed */
+    text-shadow: 1.01234px 1.01234px rgb(121, 99, 99);
+    /* on hover the list itm will get grey text shadow */
+}
+
+.contactbox-con li img {
+    padding-right: 10px;
+    /* img has right 10px padding */
+}
+
+.contactbox-con li a {
+    color: rgb(165, 137, 137);
+    /* list anchor will have grey pink color; */
+    cursor: pointer;
+    /* cursor on hover will be pointer */
+    text-decoration: none;
+    /* the underline of the anchor will be vanished */
+}
+
+.three-con {
+    background-color: yellow;
+    /* the bg color of the threecon box is yellow */
+    width: 300px;
+    /* the widht of the threecon is 300px widt */
+    grid-column: 2/span 1;
+    /* it will take the grid column starting from 2th columna and taking only one columne  */
+    height: 50px;
+    /* the heigght fo the box is as respective */
+    padding-bottom: 50px;
+    /* the padding at the bottom is 50px   */
+    order: 0;
+    /* the order of th element is 0 mean it is most smallest here so it will load at the top irrespective of the  */
+    /* display style in the html document */
+    font-size: 24px;
+    /* letter will be 24pc sized  */
+}
+
+@media only screen and (max-width: 599px) {
+    /* when the screen is up to maximum 599px the below queries will be applied  */
+    .contactbox-con {
+        background-color: rgb(133, 42, 42);
+        /* the background color of the contact box is likly red when is the screen is max 599px */
+        width: 350px;
+        /* the widht od the box will change when is the screen is max 599px */
+        height: 400px;
+        /* box height will be changed when is the screen is max 599px */
+        grid-column: 1/span4;
+        /* the grid layout will display contact box from 1th column and taking only 4 extra column when is the screen is max 599px */
+        grid-row: 2;
+        /* the grid layout will display the contact box from 2th row to 3rd rooe when is the screen is max 599px */
+        margin-top: 75px;
+        /* the top margin will be changed when is the screen is max 599px */
+        margin-left: 5px;
+        /* the left margin will not be same when is the screen is max 599px */
+        transition-duration: 10s;
+        /* the transtion duration is 10s for the changes done in this elemtn */
+        order: 1;
+        /* here it will be displayed first according to the grid layout */
+        box-shadow: 1.01234px 4.01234px rgb(37, 10, 10);
+        /* here box shadow will be changed the when is the screen is max 599px */
+        font-size: 24px;
+        /* no longer previous font size when is the screen is max 599px */
+    }
+    .contactbox-con:hover {
+        background-color: rgb(5, 13, 78);
+        /* on small screen the bg color wll be change on hover */
+    }
+    .contactbox-con h2 {
+        font-size: 40px;
+        /* the font-size will be changed of the 2nd headin in teh small  screen */
+        transition-duration: 1s;
+        /* the time for the transition duration is 1s */
+        padding-left: 25px;
+        /* the padding changes on the small screen */
+        color: rgb(238, 214, 214);
+        /* the color no longer remains same for the small screen  */
+        font-family: 'Prompt', sans-serif;
+        /* the font-family is from google and it also changes on small screeen */
+    }
+    .contactbox-con h2:hover {
+        color: rgb(255, 255, 255);
+        /* the color changes on hover in small screen */
+        font-size: 40.5px;
+        /* the font-size changes on hte small screen */
+        text-shadow: 1px 1px rgb(82, 73, 73);
+        /* the text shadwchange on mobeile deviece */
+    }
+    .contactbox-con li {
+        list-style-type: none;
+        /* bullet of the list dissappears */
+        color: rgb(165, 137, 137);
+        /* the color in moble need to be changed */
+        font-size: 18px;
+        /* the letter changes it size in mobile  */
+        transition-duration: 1s;
+        /* the transition time is 1s */
+        font-family: 'Source Code Pro', monospace;
+        /* the google font is used  */
+    }
+    .contactbox-con li a:hover {
+        color: white;
+        /* the color of the list item ischanged on hover */
+        font-size: 18.5px;
+        /* the letter size is changes on hover */
+        text-shadow: 1.01234px 1.01234px rgb(121, 99, 99);
+        /* the text shadow is changed on hover */
+    }
+    .contactbox-con li:hover {
+        color: white;
+        /* the color of the contact box list item is changed on hover */
+        font-size: 18.5px;
+        /* the size fo the letter is changed on the hover */
+        text-shadow: 1.01234px 1.01234px rgb(121, 99, 99);
+        /* the text shadow also changes on hover */
+    }
+    .contactbox-con li img {
+        padding-right: 10px;
+        /* it set padding right of the element to 10px; */
+    }
+    .contactbox-con li a {
+        color: rgb(165, 137, 137);
+        /* it sets the color to .. */
+        cursor: pointer;
+        /* the cursor changes to pointer in hover */
+        text-decoration: none;
+        /* the text hasnot any decoration means under line is removed */
+    }
+    .three-con {
+        background-color: yellow;
+        /* the background color changes in small screen */
+        width: 300px;
+        /* the width in small screen */
+        grid-column: 2/span 1;
+        /* the grid value for small screen it starts from 2 columna and take 1 column */
+        height: 50px;
+        /* height is set  */
+        padding-bottom: 50px;
+        /* padding of the bottom is 50px  on mobile devices*/
+        order: 0;
+        /* order zero in this css it is the most lessar value so it will be shoown at top irrespective to the postion  */
+        /* in the html document */
+        font-size: 24px;
+    }
+}
